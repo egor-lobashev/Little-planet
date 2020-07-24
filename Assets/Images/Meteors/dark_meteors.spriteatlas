@@ -1,0 +1,108 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: dark_meteors
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+    variantMultiplier: 1
+    packables:
+    - {fileID: 2800000, guid: b214e9631fc2e2d958f4df0e564d71d5, type: 3}
+    totalSpriteSurfaceArea: 606650
+    bindAsDefault: 1
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 1889875667955066863, guid: b214e9631fc2e2d958f4df0e564d71d5, type: 3}
+  - {fileID: -9090141908360798249, guid: b214e9631fc2e2d958f4df0e564d71d5, type: 3}
+  - {fileID: 5869242288032456368, guid: b214e9631fc2e2d958f4df0e564d71d5, type: 3}
+  - {fileID: -3940582955363475348, guid: b214e9631fc2e2d958f4df0e564d71d5, type: 3}
+  - {fileID: 439178086712076598, guid: b214e9631fc2e2d958f4df0e564d71d5, type: 3}
+  - {fileID: 1173050289435890307, guid: b214e9631fc2e2d958f4df0e564d71d5, type: 3}
+  - {fileID: -7064090684385219700, guid: b214e9631fc2e2d958f4df0e564d71d5, type: 3}
+  - {fileID: 894895748126606077, guid: b214e9631fc2e2d958f4df0e564d71d5, type: 3}
+  - {fileID: -1944813703340411062, guid: b214e9631fc2e2d958f4df0e564d71d5, type: 3}
+  - {fileID: -2219677265194219824, guid: b214e9631fc2e2d958f4df0e564d71d5, type: 3}
+  - {fileID: -7187571230682108429, guid: b214e9631fc2e2d958f4df0e564d71d5, type: 3}
+  - {fileID: 3747230756658957787, guid: b214e9631fc2e2d958f4df0e564d71d5, type: 3}
+  - {fileID: 6362809283005730408, guid: b214e9631fc2e2d958f4df0e564d71d5, type: 3}
+  - {fileID: 2063455433240220020, guid: b214e9631fc2e2d958f4df0e564d71d5, type: 3}
+  - {fileID: 558009036868900509, guid: b214e9631fc2e2d958f4df0e564d71d5, type: 3}
+  - {fileID: -1293125122996343722, guid: b214e9631fc2e2d958f4df0e564d71d5, type: 3}
+  - {fileID: -2715393999168060148, guid: b214e9631fc2e2d958f4df0e564d71d5, type: 3}
+  - {fileID: 2217427636932063357, guid: b214e9631fc2e2d958f4df0e564d71d5, type: 3}
+  - {fileID: 6226188269256030995, guid: b214e9631fc2e2d958f4df0e564d71d5, type: 3}
+  - {fileID: 4166868163479563983, guid: b214e9631fc2e2d958f4df0e564d71d5, type: 3}
+  - {fileID: -6878802350553490168, guid: b214e9631fc2e2d958f4df0e564d71d5, type: 3}
+  - {fileID: -5677742229861376521, guid: b214e9631fc2e2d958f4df0e564d71d5, type: 3}
+  - {fileID: 7269244021893733670, guid: b214e9631fc2e2d958f4df0e564d71d5, type: 3}
+  - {fileID: 6309243272431902268, guid: b214e9631fc2e2d958f4df0e564d71d5, type: 3}
+  - {fileID: -5769028672999356562, guid: b214e9631fc2e2d958f4df0e564d71d5, type: 3}
+  - {fileID: 4412463518896789118, guid: b214e9631fc2e2d958f4df0e564d71d5, type: 3}
+  - {fileID: 7683296892226672038, guid: b214e9631fc2e2d958f4df0e564d71d5, type: 3}
+  - {fileID: 4573907795298974602, guid: b214e9631fc2e2d958f4df0e564d71d5, type: 3}
+  - {fileID: -6040647088728536998, guid: b214e9631fc2e2d958f4df0e564d71d5, type: 3}
+  - {fileID: 2514443224957566604, guid: b214e9631fc2e2d958f4df0e564d71d5, type: 3}
+  - {fileID: -5850748515184915859, guid: b214e9631fc2e2d958f4df0e564d71d5, type: 3}
+  - {fileID: -7387297713894624002, guid: b214e9631fc2e2d958f4df0e564d71d5, type: 3}
+  - {fileID: -340705137776853671, guid: b214e9631fc2e2d958f4df0e564d71d5, type: 3}
+  - {fileID: 8788015687583503345, guid: b214e9631fc2e2d958f4df0e564d71d5, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - dark_meteors_0
+  - dark_meteors_1
+  - dark_meteors_2
+  - dark_meteors_3
+  - dark_meteors_4
+  - dark_meteors_5
+  - dark_meteors_6
+  - dark_meteors_7
+  - dark_meteors_8
+  - dark_meteors_9
+  - dark_meteors_26
+  - dark_meteors_27
+  - dark_meteors_24
+  - dark_meteors_25
+  - dark_meteors_22
+  - dark_meteors_23
+  - dark_meteors_20
+  - dark_meteors_21
+  - dark_meteors_31
+  - dark_meteors_30
+  - dark_meteors_33
+  - dark_meteors_28
+  - dark_meteors_32
+  - dark_meteors_29
+  - dark_meteors_13
+  - dark_meteors_12
+  - dark_meteors_11
+  - dark_meteors_10
+  - dark_meteors_17
+  - dark_meteors_16
+  - dark_meteors_15
+  - dark_meteors_14
+  - dark_meteors_19
+  - dark_meteors_18
+  m_Tag: dark_meteors
+  m_IsVariant: 0

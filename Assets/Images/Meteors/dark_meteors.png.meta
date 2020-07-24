@@ -1,0 +1,944 @@
+fileFormatVersion: 2
+guid: b214e9631fc2e2d958f4df0e564d71d5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1889875667955066863
+    second: dark_meteors_0
+  - first:
+      213: -9090141908360798249
+    second: dark_meteors_1
+  - first:
+      213: 5869242288032456368
+    second: dark_meteors_2
+  - first:
+      213: -3940582955363475348
+    second: dark_meteors_3
+  - first:
+      213: 439178086712076598
+    second: dark_meteors_4
+  - first:
+      213: 1173050289435890307
+    second: dark_meteors_5
+  - first:
+      213: -7064090684385219700
+    second: dark_meteors_6
+  - first:
+      213: 894895748126606077
+    second: dark_meteors_7
+  - first:
+      213: -1944813703340411062
+    second: dark_meteors_8
+  - first:
+      213: -2219677265194219824
+    second: dark_meteors_9
+  - first:
+      213: 4573907795298974602
+    second: dark_meteors_10
+  - first:
+      213: 7683296892226672038
+    second: dark_meteors_11
+  - first:
+      213: 4412463518896789118
+    second: dark_meteors_12
+  - first:
+      213: -5769028672999356562
+    second: dark_meteors_13
+  - first:
+      213: -7387297713894624002
+    second: dark_meteors_14
+  - first:
+      213: -5850748515184915859
+    second: dark_meteors_15
+  - first:
+      213: 2514443224957566604
+    second: dark_meteors_16
+  - first:
+      213: -6040647088728536998
+    second: dark_meteors_17
+  - first:
+      213: 8788015687583503345
+    second: dark_meteors_18
+  - first:
+      213: -340705137776853671
+    second: dark_meteors_19
+  - first:
+      213: -2715393999168060148
+    second: dark_meteors_20
+  - first:
+      213: 2217427636932063357
+    second: dark_meteors_21
+  - first:
+      213: 558009036868900509
+    second: dark_meteors_22
+  - first:
+      213: -1293125122996343722
+    second: dark_meteors_23
+  - first:
+      213: 6362809283005730408
+    second: dark_meteors_24
+  - first:
+      213: 2063455433240220020
+    second: dark_meteors_25
+  - first:
+      213: -7187571230682108429
+    second: dark_meteors_26
+  - first:
+      213: 3747230756658957787
+    second: dark_meteors_27
+  - first:
+      213: -5677742229861376521
+    second: dark_meteors_28
+  - first:
+      213: 6309243272431902268
+    second: dark_meteors_29
+  - first:
+      213: 4166868163479563983
+    second: dark_meteors_30
+  - first:
+      213: 6226188269256030995
+    second: dark_meteors_31
+  - first:
+      213: 7269244021893733670
+    second: dark_meteors_32
+  - first:
+      213: -6878802350553490168
+    second: dark_meteors_33
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: dark_meteors_0
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 661
+        width: 143
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe7ad1238ef2a3a10800000000000000
+      internalID: 1889875667955066863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_meteors_1
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 640
+        width: 144
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7df5342981459d180800000000000000
+      internalID: -9090141908360798249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_meteors_2
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 643
+        width: 209
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0be10eea3ccb37150800000000000000
+      internalID: 5869242288032456368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_meteors_3
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 655
+        width: 163
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c60e9912eac3059c0800000000000000
+      internalID: -3940582955363475348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_meteors_4
+      rect:
+        serializedVersion: 2
+        x: 773
+        y: 633
+        width: 225
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 639eb9b9426481600800000000000000
+      internalID: 439178086712076598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_meteors_5
+      rect:
+        serializedVersion: 2
+        x: 1031
+        y: 634
+        width: 126
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 382de7de503874010800000000000000
+      internalID: 1173050289435890307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_meteors_6
+      rect:
+        serializedVersion: 2
+        x: 1179
+        y: 663
+        width: 207
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8ba21023fe47fd90800000000000000
+      internalID: -7064090684385219700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_meteors_7
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 491
+        width: 146
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df2081a01fe4b6c00800000000000000
+      internalID: 894895748126606077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_meteors_8
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 450
+        width: 109
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a47351aad32a205e0800000000000000
+      internalID: -1944813703340411062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_meteors_9
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 501
+        width: 212
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d68614a94f1231e0800000000000000
+      internalID: -2219677265194219824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_meteors_10
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 472
+        width: 138
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8b7f2ef7e8c97f30800000000000000
+      internalID: 4573907795298974602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_meteors_11
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 509
+        width: 130
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a5980dc0dd80aa60800000000000000
+      internalID: 7683296892226672038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_meteors_12
+      rect:
+        serializedVersion: 2
+        x: 966
+        y: 422
+        width: 138
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e76963431383c3d30800000000000000
+      internalID: 4412463518896789118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_meteors_13
+      rect:
+        serializedVersion: 2
+        x: 1147
+        y: 444
+        width: 146
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6784deccfa40ffa0800000000000000
+      internalID: -5769028672999356562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_meteors_14
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 353
+        width: 138
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef471496edb0b7990800000000000000
+      internalID: -7387297713894624002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_meteors_15
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 216
+        width: 136
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6a424a5937fdcea0800000000000000
+      internalID: -5850748515184915859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_meteors_16
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 318
+        width: 164
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8ebb7f7ac815e220800000000000000
+      internalID: 2514443224957566604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_meteors_17
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 331
+        width: 140
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5886de3a7f4b2ca0800000000000000
+      internalID: -6040647088728536998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_meteors_18
+      rect:
+        serializedVersion: 2
+        x: 822
+        y: 337
+        width: 75
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f399faf4bd45f970800000000000000
+      internalID: 8788015687583503345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_meteors_19
+      rect:
+        serializedVersion: 2
+        x: 985
+        y: 209
+        width: 119
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95df8a97b72954bf0800000000000000
+      internalID: -340705137776853671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_meteors_20
+      rect:
+        serializedVersion: 2
+        x: 1163
+        y: 291
+        width: 102
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c054c566b8bf05ad0800000000000000
+      internalID: -2715393999168060148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_meteors_21
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 208
+        width: 118
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d703876ffa2e5ce10800000000000000
+      internalID: 2217427636932063357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_meteors_22
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 186
+        width: 157
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d96570833427eb700800000000000000
+      internalID: 558009036868900509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_meteors_23
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 199
+        width: 103
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65c6ba94d85ed0ee0800000000000000
+      internalID: -1293125122996343722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_meteors_24
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 192
+        width: 118
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86e4d1fc45d3d4850800000000000000
+      internalID: 6362809283005730408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_meteors_25
+      rect:
+        serializedVersion: 2
+        x: 1137
+        y: 32
+        width: 139
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 471122ca8cdd2ac10800000000000000
+      internalID: 2063455433240220020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_meteors_26
+      rect:
+        serializedVersion: 2
+        x: 1290
+        y: 43
+        width: 99
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fd206d0c0e904c90800000000000000
+      internalID: -7187571230682108429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_meteors_27
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 26
+        width: 116
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdd431ef486d00430800000000000000
+      internalID: 3747230756658957787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_meteors_28
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 12
+        width: 116
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fdd0ee168b9431b0800000000000000
+      internalID: -5677742229861376521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_meteors_29
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 17
+        width: 155
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3e93d6145fee8750800000000000000
+      internalID: 6309243272431902268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_meteors_30
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 19
+        width: 101
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fce65168480b3d930800000000000000
+      internalID: 4166868163479563983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_meteors_31
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 9
+        width: 120
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31bb5bd3e3dd76650800000000000000
+      internalID: 6226188269256030995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_meteors_32
+      rect:
+        serializedVersion: 2
+        x: 803
+        y: 24
+        width: 134
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62d9b9e7cea81e460800000000000000
+      internalID: 7269244021893733670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_meteors_33
+      rect:
+        serializedVersion: 2
+        x: 956
+        y: 9
+        width: 161
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80d132725b59980a0800000000000000
+      internalID: -6878802350553490168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
