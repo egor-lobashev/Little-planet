@@ -4,8 +4,6 @@ public class Explode_falling : MonoBehaviour
 {
     private bool not_fallen = true;
     public float explode_force, explode_radius;
-    public int count;
-    public Vector2 cent;
     private float mass;
 
     void OnCollisionEnter2D(Collision2D collision)
@@ -16,7 +14,11 @@ public class Explode_falling : MonoBehaviour
             gameObject.GetComponent<Rigidbody2D>().isKinematic = false;
             Vector2 explode_center = collision.GetContact(0).point;
             Explode(explode_center);
-            cent = explode_center;
+
+            transform.GetChild(1).gameObject.GetComponent<Audio_controller>().Fall_sound(collision.gameObject.tag);
+
+            transform.GetChild(2).gameObject.GetComponent<Particle_controller>().trace.Stop();
+            transform.GetChild(2).gameObject.GetComponent<Particle_controller>().front.Stop();
         }
     }
 
@@ -29,7 +31,6 @@ public class Explode_falling : MonoBehaviour
     {
         foreach (Collider2D meteor in Physics2D.OverlapCircleAll(explode_center, explode_radius, 1, 0, 5))
         {
-            count++;
             if (meteor.gameObject == gameObject)
                 continue;
             Vector2 to_meteor = (Vector2)meteor.gameObject.transform.position - explode_center;

@@ -3,6 +3,7 @@ using UnityEngine;
 public class Meteor_damage : MonoBehaviour
 {
     public float momental_damage, continious_damage, cooldown, dark_time, smooth_time;
+    public float mass;
     private Rigidbody2D rb;
     private Animator animator;
     private Telomere telomere;
@@ -12,6 +13,11 @@ public class Meteor_damage : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+
+        rb.isKinematic = false;
+        mass = rb.mass;
+        rb.isKinematic = true;
+
         animator = GetComponent<Animator>();
         telomere = GetComponent<Telomere>();
     }
@@ -21,8 +27,10 @@ public class Meteor_damage : MonoBehaviour
         if (other.gameObject.tag == "Player")
         {
             other.gameObject.GetComponent<Health>().Receive_damage(
-                momental_damage * rb.velocity.magnitude * rb.mass);
+                momental_damage * rb.velocity.magnitude * mass);
         }
+
+        transform.GetChild(1).gameObject.GetComponent<Audio_controller>().Collision_sound(other.gameObject.tag);
     }
 
     void OnCollisionStay2D(Collision2D other)
@@ -55,6 +63,7 @@ public class Meteor_damage : MonoBehaviour
         if (hot && (telomere.life_time <= dark_time + smooth_time))
         {
             animator.SetBool("hot", false);
+            // transform.GetChild(1).gameObject.GetComponent<Audio_controller>().fire.Stop();
         }
 
         if (hot && (telomere.life_time <= dark_time))

@@ -3,7 +3,9 @@ guid: a657f34f505d405ecb3fe399f2b14cde
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - controller: {instanceID: 0}
+  - dark_meteors: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
