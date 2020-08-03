@@ -249,75 +249,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 528843420}
   m_CullTransparentMesh: 0
---- !u!1001 &563277058
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1473683953737822233, guid: c7bd56246df60cf1099f7dca202460c1,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1473683953737822233, guid: c7bd56246df60cf1099f7dca202460c1,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1473683953737822233, guid: c7bd56246df60cf1099f7dca202460c1,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1473683953737822233, guid: c7bd56246df60cf1099f7dca202460c1,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1473683953737822233, guid: c7bd56246df60cf1099f7dca202460c1,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1473683953737822233, guid: c7bd56246df60cf1099f7dca202460c1,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1473683953737822233, guid: c7bd56246df60cf1099f7dca202460c1,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1473683953737822233, guid: c7bd56246df60cf1099f7dca202460c1,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 1473683953737822233, guid: c7bd56246df60cf1099f7dca202460c1,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1473683953737822233, guid: c7bd56246df60cf1099f7dca202460c1,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1473683953737822233, guid: c7bd56246df60cf1099f7dca202460c1,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2658716488884564232, guid: c7bd56246df60cf1099f7dca202460c1,
-        type: 3}
-      propertyPath: m_Name
-      value: Audio of meteor
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: c7bd56246df60cf1099f7dca202460c1, type: 3}
 --- !u!1 &946861884
 GameObject:
   m_ObjectHideFlags: 0
@@ -1287,7 +1218,7 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 1
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0
   m_GravityScale: 1
   m_Material: {fileID: 0}
   m_Interpolate: 0
@@ -1783,10 +1714,11 @@ MonoBehaviour:
   spawn_radius: 10
   velocity: 5
   min_size: 0.5
+  angular_velocity: 100
   angular_drag: 5
   life_time: 14
   life_time_range: 3
-  explode_force: 2
+  explode_force: 3
   explode_radius: 2
   momental_damage: 2
   continious_damage: 5

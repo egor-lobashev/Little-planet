@@ -6,6 +6,7 @@ public class Meteor_damage : MonoBehaviour
     public float mass;
     private Rigidbody2D rb;
     private Animator animator;
+    private Audio_controller audio_controller;
     private Telomere telomere;
     private float timer = 0;
     private bool ready_to_attack = true, hot = true;
@@ -19,18 +20,23 @@ public class Meteor_damage : MonoBehaviour
         rb.isKinematic = true;
 
         animator = GetComponent<Animator>();
+        audio_controller = transform.GetChild(1).gameObject.GetComponent<Audio_controller>();
         telomere = GetComponent<Telomere>();
     }
 
     void OnCollisionEnter2D(Collision2D other)
     {
+        float received_damage = 0;
+
         if (other.gameObject.tag == "Player")
         {
-            other.gameObject.GetComponent<Health>().Receive_damage(
-                momental_damage * rb.velocity.magnitude * mass);
+            float velocity_projection = Vector2.Dot(rb.velocity,
+                ((Vector2)(transform.position - other.transform.position)).normalized);
+            received_damage = momental_damage * Mathf.Pow(velocity_projection, 2) * mass;
+            other.gameObject.GetComponent<Health>().Receive_damage(received_damage);
         }
 
-        transform.GetChild(1).gameObject.GetComponent<Audio_controller>().Collision_sound(other.gameObject.tag);
+        audio_controller.Collision_sound(other, received_damage);
     }
 
     void OnCollisionStay2D(Collision2D other)
@@ -40,6 +46,7 @@ public class Meteor_damage : MonoBehaviour
             if (ready_to_attack)
             {
                 other.gameObject.GetComponent<Health>().Receive_damage(continious_damage);
+                audio_controller.Fire_damage_sound();
                 timer = cooldown;
                 ready_to_attack = false;
             }
@@ -63,7 +70,6 @@ public class Meteor_damage : MonoBehaviour
         if (hot && (telomere.life_time <= dark_time + smooth_time))
         {
             animator.SetBool("hot", false);
-            // transform.GetChild(1).gameObject.GetComponent<Audio_controller>().fire.Stop();
         }
 
         if (hot && (telomere.life_time <= dark_time))

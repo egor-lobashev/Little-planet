@@ -15,7 +15,7 @@ public class Explode_falling : MonoBehaviour
             Vector2 explode_center = collision.GetContact(0).point;
             Explode(explode_center);
 
-            transform.GetChild(1).gameObject.GetComponent<Audio_controller>().Fall_sound(collision.gameObject.tag);
+            transform.GetChild(1).gameObject.GetComponent<Audio_controller>().Fall_sound(collision);
 
             transform.GetChild(2).gameObject.GetComponent<Particle_controller>().trace.Stop();
             transform.GetChild(2).gameObject.GetComponent<Particle_controller>().front.Stop();

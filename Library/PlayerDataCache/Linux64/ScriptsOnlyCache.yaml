@@ -1,10 +1,12 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - Audio_controller
     - Controller
     - HP_show
     - Health
     - Meteor_spawner
+    - Particle_controller
     - Time_show
     - Vestibular
     Unity.2D.Animation.Editor.dll:
@@ -20,10 +22,8 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -62,6 +62,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
     - Class: 91
       Script: {instanceID: 0}
     - Class: 95
@@ -77,21 +81,25 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11516}
     - Class: 114
-      Script: {instanceID: 12178}
+      Script: {instanceID: 11782}
     - Class: 114
-      Script: {instanceID: 12214}
+      Script: {instanceID: 12180}
     - Class: 114
-      Script: {instanceID: 13136}
+      Script: {instanceID: 12216}
     - Class: 114
-      Script: {instanceID: 13638}
+      Script: {instanceID: 13138}
     - Class: 114
-      Script: {instanceID: 13706}
+      Script: {instanceID: 13170}
     - Class: 114
-      Script: {instanceID: 14106}
+      Script: {instanceID: 13642}
     - Class: 114
-      Script: {instanceID: 14252}
+      Script: {instanceID: 13710}
     - Class: 114
-      Script: {instanceID: 14254}
+      Script: {instanceID: 14110}
+    - Class: 114
+      Script: {instanceID: 14256}
+    - Class: 114
+      Script: {instanceID: 14258}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -99,6 +107,10 @@ ScriptsOnlyBuild:
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
+      Script: {instanceID: 0}
+    - Class: 198
+      Script: {instanceID: 0}
+    - Class: 199
       Script: {instanceID: 0}
     - Class: 212
       Script: {instanceID: 0}
@@ -111,6 +123,8 @@ ScriptsOnlyBuild:
     - Class: 224
       Script: {instanceID: 0}
     - Class: 250
+      Script: {instanceID: 0}
+    - Class: 330
       Script: {instanceID: 0}
     - Class: 687078895
       Script: {instanceID: 0}
@@ -249,6 +263,12 @@ ScriptsOnlyBuild:
     className: PhysicsRaycaster
   - hash:
       serializedVersion: 2
+      Hash: 7f75d46eec36b8818fce1940cb9a5d39
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Audio_controller
+  - hash:
+      serializedVersion: 2
       Hash: bd3cf68c8964d3c66d1c43f4f98508c9
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -279,7 +299,7 @@ ScriptsOnlyBuild:
     className: RectMask2D
   - hash:
       serializedVersion: 2
-      Hash: 62d6984630c2c983a8d46bd0e812f6b3
+      Hash: b204665cce938e4e2e49b6bef3200c70
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Meteor_damage
@@ -433,6 +453,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.2D.Animation.Runtime.dll
     namespaceName: UnityEngine.U2D.Animation
     className: SpriteSkin
+  - hash:
+      serializedVersion: 2
+      Hash: 8a8d2cabd27a49baa95a1b1f6eb50b51
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Particle_controller
   - hash:
       serializedVersion: 2
       Hash: 783f593b9380cf72d0f7ebfd4a0d4bcd
@@ -603,7 +629,7 @@ ScriptsOnlyBuild:
     className: Dropdown
   - hash:
       serializedVersion: 2
-      Hash: 2ee483cad7ed019a5b97b4206bc62716
+      Hash: bfa0f060c0e4e8c0ddb4f9bc04174a17
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Meteor_spawner
@@ -639,7 +665,7 @@ ScriptsOnlyBuild:
     className: ToggleGroup
   - hash:
       serializedVersion: 2
-      Hash: 8835528d1f8b8fd2a7659eddb84ef3c7
+      Hash: 76684e2ad5bd56fd25edfcb02a74263a
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Explode_falling
@@ -652,4 +678,4 @@ ScriptsOnlyBuild:
   platform: 24
   scenePathNames:
   - Assets/Scenes/Pluto.unity
-  playerPath: /home/moscow/Desktop/bin 2/Little_planet_versions/Alpha 0.0.x86_64
+  playerPath: /home/moscow/Desktop/Little_planet_versions/Alpha 0.1/Alpha 0.1.x86_64

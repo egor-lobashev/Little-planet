@@ -6,6 +6,7 @@ public class Particle_controller : MonoBehaviour
     public ParticleSystem trace, front, dust;
     private Telomere telomere;
     private bool spawned_dust = false;
+    private Vector3 default_direction;
 
     void Start()
     {
@@ -17,20 +18,29 @@ public class Particle_controller : MonoBehaviour
 
         float mass = transform.parent.gameObject.GetComponent<Meteor_damage>().mass;
 
-        var shape = front.shape;
-        shape.sprite = source_metor;
         Vector3 parent_scale = transform.parent.localScale;
-        shape.scale = new Vector3(parent_scale.x * shape.scale.x, parent_scale.y * shape.scale.y,
-            parent_scale.z * shape.scale.z);
-        shape.rotation -= transform.localEulerAngles;
-        
-        var emission = front.emission;
-        emission.rateOverTime = new ParticleSystem.MinMaxCurve(mass * emission.rateOverTime.constantMax);
 
-        shape = dust.shape;
-        shape.sprite = source_metor;
+        var front_shape = front.shape;
+        front_shape.sprite = source_metor;
+        front_shape.scale = parent_scale;
+        front_shape.rotation -= transform.localEulerAngles;
+        
+        var front_emission = front.emission;
+        front_emission.rateOverTime = new ParticleSystem.MinMaxCurve(mass * front_emission.rateOverTime.constantMax);
+
+
+        var dust_shape = dust.shape;
+        dust_shape.sprite = source_metor;
+        dust_shape.scale = parent_scale;
+        dust_shape.rotation -= transform.localEulerAngles;
+
+        var dust_emission = dust.emission;
+        dust_emission.rateOverTime = new ParticleSystem.MinMaxCurve(mass * dust_emission.rateOverTime.constantMax);
+
 
         telomere = transform.parent.gameObject.GetComponent<Telomere>();
+
+        default_direction = transform.eulerAngles;
     }
 
     void Update()
@@ -43,6 +53,9 @@ public class Particle_controller : MonoBehaviour
             dust.gameObject.AddComponent<Telomere>();
             dust.gameObject.GetComponent<Telomere>().life_time =
                 dust.main.duration + dust.main.startLifetime.constantMax;
+            dust.GetComponent<AudioSource>().Play();
         }
+
+        transform.GetChild(1).eulerAngles = default_direction;
     }
 }

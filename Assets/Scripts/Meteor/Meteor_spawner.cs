@@ -4,7 +4,7 @@ public class Meteor_spawner : MonoBehaviour
 {
     public float
         sapwn_period, sapwn_period_range, spawn_radius,
-        velocity, min_size, angular_drag,
+        velocity, min_size, angular_velocity, angular_drag,
         life_time, life_time_range,
         explode_force, explode_radius,
         momental_damage, continious_damage, cooldown,
@@ -42,6 +42,7 @@ public class Meteor_spawner : MonoBehaviour
         meteor.GetComponent<Rigidbody2D>().velocity = -meteor.transform.position.normalized * velocity;
         meteor.GetComponent<Rigidbody2D>().isKinematic = true;
         meteor.GetComponent<Rigidbody2D>().useAutoMass = true;
+        meteor.GetComponent<Rigidbody2D>().angularVelocity = angular_velocity * 2*(Random.value - 0.5f);
         meteor.GetComponent<Rigidbody2D>().angularDrag = angular_drag;
 
         meteor.AddComponent<Meteor_damage>();
