@@ -36,6 +36,7 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\Functional objects\Saturn_features.cs" />
      <Compile Include="Assets\Scripts\Meteor\Audio_controller.cs" />
      <Compile Include="Assets\Scripts\Meteor\Explode_falling.cs" />
      <Compile Include="Assets\Scripts\Meteor\Meteor_damage.cs" />

@@ -3,7 +3,7 @@
 public class Controller : MonoBehaviour
 {
     public float speed, jump_force;
-    private float ground_height = 0.5f, ground_radius = 0.1f;
+    public float ground_height = 0.5f, ground_radius = 0.05f, bumper_height = 0.35f, bumper_radius = 0.15f;
     private Rigidbody2D rb;
     private Animator animator;
     private bool grounded;
@@ -26,11 +26,13 @@ public class Controller : MonoBehaviour
 
         float velocity = Vector2.Dot(rb.velocity, pos.normalized);
 
-        transform.position = new Vector3(r * Mathf.Sin((phi + delta_phi)*Mathf.Deg2Rad), r * Mathf.Cos((phi + delta_phi)*Mathf.Deg2Rad), 0);
+        transform.position = new Vector3(r * Mathf.Sin((phi + delta_phi)*Mathf.Deg2Rad),
+            r * Mathf.Cos((phi + delta_phi)*Mathf.Deg2Rad), transform.position.z);
         Vector2 up = ((Vector2)transform.position).normalized;
         rb.velocity = velocity*up;
 
-        grounded = Physics2D.OverlapCircle((Vector2)transform.position - up*ground_height, ground_radius, 1, 5, 10);
+        grounded = (Physics2D.OverlapCircle((Vector2)transform.position - up*ground_height, ground_radius, 1, 5, 10)
+            && !Physics2D.OverlapCircle((Vector2)transform.position - up*bumper_height, bumper_radius, 1, 5, 10));
 
         animator.SetBool("grounded", grounded);
     }
