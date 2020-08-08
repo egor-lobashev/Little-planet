@@ -324,6 +324,12 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!20 &193346288 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 5024965034409620420, guid: 49e55247037d0ea99b8a097e51f49c23,
+    type: 3}
+  m_PrefabInstance: {fileID: 1880208502}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &250005230 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7350387267747156557, guid: 9ed8a7451e06f080192debb861ac1a5b,
@@ -822,6 +828,11 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6958436832128835273, guid: ce0f928f200542b8eb00398cc8096773,
+        type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 193346288}
     - target: {fileID: 6958436832128835276, guid: ce0f928f200542b8eb00398cc8096773,
         type: 3}
       propertyPath: m_Name
