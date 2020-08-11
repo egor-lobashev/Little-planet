@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6626567692491894996}
   - component: {fileID: 6626567692491894987}
   - component: {fileID: 6626567692491894985}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Cosmonaut sprite
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -116,7 +116,7 @@ GameObject:
   - component: {fileID: 6626567693301278535}
   - component: {fileID: 6626567693301278533}
   - component: {fileID: 6626567693301278532}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Cosmonaut
   m_TagString: Player
   m_Icon: {fileID: 0}

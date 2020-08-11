@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 104461964}
   - component: {fileID: 104461963}
   - component: {fileID: 104461968}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Rings
   m_TagString: Planet
   m_Icon: {fileID: 0}
@@ -343,11 +343,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 7350387267453190175, guid: 9ed8a7451e06f080192debb861ac1a5b,
-        type: 3}
-      propertyPath: m_Parameters.m_Length
-      value: 40
-      objectReference: {fileID: 0}
     - target: {fileID: 7350387267747156556, guid: 9ed8a7451e06f080192debb861ac1a5b,
         type: 3}
       propertyPath: m_Sprite
@@ -413,6 +408,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Saturn
+      objectReference: {fileID: 0}
+    - target: {fileID: 7350387267747156558, guid: 9ed8a7451e06f080192debb861ac1a5b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9ed8a7451e06f080192debb861ac1a5b, type: 3}

@@ -36,6 +36,10 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\Functional objects\Cloud_Venus.cs" />
+     <Compile Include="Assets\Scripts\Functional objects\Cloud_damage.cs" />
+     <Compile Include="Assets\Scripts\Functional objects\Cloud_spawner.cs" />
+     <Compile Include="Assets\Scripts\Functional objects\Rain.cs" />
      <Compile Include="Assets\Scripts\Functional objects\Saturn_features.cs" />
      <Compile Include="Assets\Scripts\Meteor\Audio_controller.cs" />
      <Compile Include="Assets\Scripts\Meteor\Explode_falling.cs" />
@@ -47,6 +51,7 @@
      <Compile Include="Assets\Scripts\Pers\Health.cs" />
      <Compile Include="Assets\Scripts\Pers\Vestibular.cs" />
      <Compile Include="Assets\Scripts\UI\HP_show.cs" />
+     <Compile Include="Assets\Scripts\UI\Select_level.cs" />
      <Compile Include="Assets\Scripts\UI\Time_show.cs" />
     <Reference Include="UnityEngine">
         <HintPath>/home/moscow/Unity/Hub/Editor/2019.4.1f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>

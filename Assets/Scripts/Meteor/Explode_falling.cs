@@ -29,7 +29,7 @@ public class Explode_falling : MonoBehaviour
 
     void Explode(Vector2 explode_center)
     {
-        foreach (Collider2D meteor in Physics2D.OverlapCircleAll(explode_center, explode_radius, 1, 0, 5))
+        foreach (Collider2D meteor in Physics2D.OverlapCircleAll(explode_center, explode_radius, 1 << 9))
         {
             if (meteor.gameObject == gameObject)
                 continue;

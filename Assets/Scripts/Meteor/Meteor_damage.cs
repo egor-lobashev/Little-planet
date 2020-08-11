@@ -4,12 +4,16 @@ public class Meteor_damage : MonoBehaviour
 {
     public float momental_damage, continious_damage, cooldown, dark_time, smooth_time;
     public float mass;
+
     private Rigidbody2D rb;
     private Animator animator;
     private Audio_controller audio_controller;
     private Telomere telomere;
+
     private float timer = 0;
-    private bool ready_to_attack = true, hot = true;
+
+    private bool ready_to_attack = true;
+    public bool hot = true;
 
     void Start()
     {

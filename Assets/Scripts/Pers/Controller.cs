@@ -31,8 +31,9 @@ public class Controller : MonoBehaviour
         Vector2 up = ((Vector2)transform.position).normalized;
         rb.velocity = velocity*up;
 
-        grounded = (Physics2D.OverlapCircle((Vector2)transform.position - up*ground_height, ground_radius, 1, 5, 10)
-            && !Physics2D.OverlapCircle((Vector2)transform.position - up*bumper_height, bumper_radius, 1, 5, 10));
+        grounded =
+            (Physics2D.OverlapCircle((Vector2)transform.position - up*ground_height, ground_radius, (1 << 8) + (1 << 9)) &&
+            !Physics2D.OverlapCircle((Vector2)transform.position - up*bumper_height, bumper_radius, (1 << 8) + (1 << 9)));
 
         animator.SetBool("grounded", grounded);
     }

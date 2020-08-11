@@ -37,6 +37,7 @@ public class Meteor_spawner : MonoBehaviour
         float scale = Random.value*(1-min_size) + min_size;
         meteor.transform.localScale = new Vector3(scale, scale * (Random.value < 0.5 ? -1 : 1), 1);
         meteor.transform.eulerAngles = new Vector3(0, 0, Random.value * 360);
+        meteor.layer = 9;
 
         meteor.AddComponent<Rigidbody2D>();
         meteor.GetComponent<Rigidbody2D>().velocity = -meteor.transform.position.normalized * velocity;

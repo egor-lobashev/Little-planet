@@ -674,5 +674,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pluto
       objectReference: {fileID: 0}
+    - target: {fileID: 7350387267747156558, guid: 9ed8a7451e06f080192debb861ac1a5b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9ed8a7451e06f080192debb861ac1a5b, type: 3}
