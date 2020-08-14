@@ -17,7 +17,8 @@ public class Rain : MonoBehaviour
                 rain_is_going = true;
                 GetComponent<BoxCollider2D>().enabled = true;
                 GetComponent<ParticleSystem>().Play();
-                rain_sound.Play();
+                if (rain_sound != null)
+                    rain_sound.Play();
             }
         }
         else if (!rain_is_finished)

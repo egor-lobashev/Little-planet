@@ -52,7 +52,7 @@ MonoBehaviour:
   angular_drag: 5
   life_time: 14
   life_time_range: 3
-  explode_force: 3
+  explode_force: 2.5
   explode_radius: 2
   momental_damage: 2
   continious_damage: 5

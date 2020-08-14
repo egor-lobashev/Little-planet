@@ -36,11 +36,15 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\Functional objects\Cloud_Neptune.cs" />
      <Compile Include="Assets\Scripts\Functional objects\Cloud_Venus.cs" />
      <Compile Include="Assets\Scripts\Functional objects\Cloud_damage.cs" />
      <Compile Include="Assets\Scripts\Functional objects\Cloud_spawner.cs" />
+     <Compile Include="Assets\Scripts\Functional objects\Neptune_features.cs" />
      <Compile Include="Assets\Scripts\Functional objects\Rain.cs" />
      <Compile Include="Assets\Scripts\Functional objects\Saturn_features.cs" />
+     <Compile Include="Assets\Scripts\Functional objects\Snow.cs" />
+     <Compile Include="Assets\Scripts\Functional objects\Snow_sound.cs" />
      <Compile Include="Assets\Scripts\Functional objects\Volcano.cs" />
      <Compile Include="Assets\Scripts\Meteor\Audio_controller.cs" />
      <Compile Include="Assets\Scripts\Meteor\Explode_falling.cs" />

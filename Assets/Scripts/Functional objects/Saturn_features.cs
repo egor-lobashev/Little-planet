@@ -13,7 +13,7 @@ public class Saturn_features : MonoBehaviour
         if (other.gameObject.tag == "Player")
         {
             Vector3 prev = other.gameObject.transform.position;
-            other.gameObject.transform.position = new Vector3(prev.x, prev.y, -3);
+            other.gameObject.transform.position = new Vector3(prev.x, prev.y, -2);
         }
     }
 
@@ -22,7 +22,7 @@ public class Saturn_features : MonoBehaviour
         if (other.gameObject.tag == "Player")
         {
             Vector3 prev = other.gameObject.transform.position;
-            other.gameObject.transform.position = new Vector3(prev.x, prev.y, 12);
+            other.gameObject.transform.position = new Vector3(prev.x, prev.y, 16);
         }
     }
 }
