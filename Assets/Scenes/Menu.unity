@@ -418,7 +418,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: afcf5841ca98656c6a88f3dc6a050ef0, type: 3}
+    m_Font: {fileID: 12800000, guid: c8f19b43e5be0d64a9329977fe821fa7, type: 3}
     m_FontSize: 50
     m_FontStyle: 0
     m_BestFit: 0
@@ -434,7 +434,9 @@ MonoBehaviour:
 
     S - Saturn
 
-    V - Venus'
+    V - Venus
+
+    A - Mars'
 --- !u!222 &1435913632
 CanvasRenderer:
   m_ObjectHideFlags: 0

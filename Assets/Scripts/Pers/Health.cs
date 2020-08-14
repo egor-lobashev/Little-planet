@@ -5,11 +5,13 @@ public class Health : MonoBehaviour
     
     public float HP_max;
     private float HP;
-    private bool game_over_msg = false;
+    private bool game_over_msg = false, damaged_right_now = false;
+    private Animator animator;
 
     void Start()
     {
         HP = HP_max;
+        animator = GetComponent<Animator>();
     }
 
     public float Show_HP()
@@ -19,7 +21,11 @@ public class Health : MonoBehaviour
 
     public void Receive_damage(float damage)
     {
+        if (damage < 1)
+            return;
+            
         HP -= damage;
+        damaged_right_now = true;
 
         if (HP <= 0)
         {
@@ -30,6 +36,19 @@ public class Health : MonoBehaviour
                 Application.Quit();
                 game_over_msg = true;
             }
+        }
+    }
+
+    void Update()
+    {
+        if (damaged_right_now == true)
+        {
+            damaged_right_now = false;
+            animator.SetBool("damaged", true);
+        }
+        else
+        {
+            animator.SetBool("damaged", false);
         }
     }
 }

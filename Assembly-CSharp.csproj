@@ -41,6 +41,7 @@
      <Compile Include="Assets\Scripts\Functional objects\Cloud_spawner.cs" />
      <Compile Include="Assets\Scripts\Functional objects\Rain.cs" />
      <Compile Include="Assets\Scripts\Functional objects\Saturn_features.cs" />
+     <Compile Include="Assets\Scripts\Functional objects\Volcano.cs" />
      <Compile Include="Assets\Scripts\Meteor\Audio_controller.cs" />
      <Compile Include="Assets\Scripts\Meteor\Explode_falling.cs" />
      <Compile Include="Assets\Scripts\Meteor\Meteor_damage.cs" />

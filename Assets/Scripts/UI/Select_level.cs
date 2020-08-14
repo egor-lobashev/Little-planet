@@ -24,5 +24,10 @@ public class Select_level : MonoBehaviour
         {
             SceneManager.LoadScene("Venus");
         }
+
+        else if (Input.GetKeyDown(KeyCode.A))
+        {
+            SceneManager.LoadScene("Mars");
+        }
     }
 }

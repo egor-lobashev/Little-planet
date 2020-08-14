@@ -116,6 +116,7 @@ GameObject:
   - component: {fileID: 6626567693301278535}
   - component: {fileID: 6626567693301278533}
   - component: {fileID: 6626567693301278532}
+  - component: {fileID: 23294367}
   m_Layer: 0
   m_Name: Cosmonaut
   m_TagString: Player
@@ -218,3 +219,22 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!95 &23294367
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6626567693301278585}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: faf4bf430b7ee2f84a37fc7bcb8c4726, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

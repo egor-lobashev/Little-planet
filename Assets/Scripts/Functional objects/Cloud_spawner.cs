@@ -25,6 +25,6 @@ public class Cloud_spawner : MonoBehaviour
     {
         GameObject cloud = Object.Instantiate(cloud_prefab);
         cloud.transform.eulerAngles = new Vector3(0, 0, Random.value * 360);
-        cloud.transform.position = new Vector3(0, 0, 10);
+        cloud.transform.position = new Vector3(0, 0, 0);
     }
 }
