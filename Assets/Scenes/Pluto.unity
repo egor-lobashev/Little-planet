@@ -133,6 +133,12 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 6626567694031736228}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1569463783 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1326443523169753063, guid: ce0f928f200542b8eb00398cc8096773,
+    type: 3}
+  m_PrefabInstance: {fileID: 6958436830257235999}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &288432875541458527
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -416,6 +422,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6626567693301278534, guid: bce60546b560504c6b83ebaeedd8369b,
+        type: 3}
+      propertyPath: pause_screen
+      value: 
+      objectReference: {fileID: 1569463783}
     - target: {fileID: 6626567693301278585, guid: bce60546b560504c6b83ebaeedd8369b,
         type: 3}
       propertyPath: m_Name
@@ -633,7 +644,7 @@ PrefabInstance:
     - target: {fileID: 7350387267747156557, guid: 9ed8a7451e06f080192debb861ac1a5b,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 10
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7350387267747156557, guid: 9ed8a7451e06f080192debb861ac1a5b,
         type: 3}

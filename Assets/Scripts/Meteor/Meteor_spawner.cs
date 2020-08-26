@@ -12,6 +12,7 @@ public class Meteor_spawner : MonoBehaviour
     public RuntimeAnimatorController controller;
     public UnityEngine.U2D.SpriteAtlas dark_meteors;
     public GameObject audio_child_prefab, particle_child_prefab;
+    public bool sun_is_close = false;
     private float timer;
 
     void Spawn_meteor()
@@ -31,7 +32,8 @@ public class Meteor_spawner : MonoBehaviour
         GameObject audio_child = (GameObject)Object.Instantiate(audio_child_prefab);
         audio_child.transform.SetParent(meteor.transform);
 
-        float phi = Random.value * 2 * Mathf.PI;
+        float phi = sun_is_close ? (Random.value - 0.5f) * Mathf.PI :
+            Random.value * 2 * Mathf.PI;
         meteor.transform.position = new Vector3(spawn_radius * Mathf.Cos(phi), spawn_radius * Mathf.Sin(phi), 5);
 
         float scale = Random.value*(1-min_size) + min_size;

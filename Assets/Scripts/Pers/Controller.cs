@@ -1,9 +1,11 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Controller : MonoBehaviour
 {
     public float speed, jump_force;
     public float ground_height = 0.5f, ground_radius = 0.05f, bumper_height = 0.35f, bumper_radius = 0.15f;
+    public bool sun_is_close = false;
     private Rigidbody2D rb;
     private Animator animator;
     private bool grounded;
@@ -12,6 +14,12 @@ public class Controller : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         animator = transform.GetChild(0).GetComponent<Animator>();
+        Vector3 pos = transform.position;
+        if (sun_is_close)
+        {
+            transform.position = new Vector3(pos.y, pos.x, pos.z);
+            transform.eulerAngles = new Vector3(0, 0, -90);
+        }
     }
 
     void FixedUpdate()
@@ -45,11 +53,6 @@ public class Controller : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && grounded)
         {
             rb.AddForce(pos.normalized*jump_force, ForceMode2D.Impulse);
-        }
-
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            Application.Quit();
         }
 
         animator.SetBool("going_right", Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow));

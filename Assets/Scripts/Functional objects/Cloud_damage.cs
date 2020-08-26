@@ -16,7 +16,7 @@ public class Cloud_damage : MonoBehaviour
         {
             if (ready_to_attack)
             {
-                other.GetComponent<Health>().Receive_damage(continious_damage);
+                other.GetComponent<Health>().Receive_damage(continious_damage, true);
                 damage_sound.Play();
                 timer = cooldown;
                 ready_to_attack = false;

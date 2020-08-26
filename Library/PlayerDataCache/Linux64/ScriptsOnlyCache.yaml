@@ -2,6 +2,7 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - Audio_controller
+    - Cloud_Neptune
     - Cloud_Venus
     - Cloud_damage
     - Cloud_spawner
@@ -9,12 +10,17 @@ ScriptsOnlyBuild:
     - HP_show
     - Health
     - Meteor_spawner
+    - Neptune_features
     - Particle_controller
     - Rain
     - Saturn_features
     - Select_level
+    - Snow
+    - Snow_sound
+    - Telomere
     - Time_show
     - Vestibular
+    - Volcano
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.Tilemap.Editor.dll:
@@ -43,6 +49,101 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Image
     - UnityEngine.UI.Text
   sceneClasses:
+    Assets/Scenes/Mars.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 50
+      Script: {instanceID: 0}
+    - Class: 58
+      Script: {instanceID: 0}
+    - Class: 61
+      Script: {instanceID: 0}
+    - Class: 70
+      Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 11154}
+    - Class: 114
+      Script: {instanceID: 11176}
+    - Class: 114
+      Script: {instanceID: 11272}
+    - Class: 114
+      Script: {instanceID: 11468}
+    - Class: 114
+      Script: {instanceID: 11522}
+    - Class: 114
+      Script: {instanceID: 11766}
+    - Class: 114
+      Script: {instanceID: 11794}
+    - Class: 114
+      Script: {instanceID: 12228}
+    - Class: 114
+      Script: {instanceID: 12568}
+    - Class: 114
+      Script: {instanceID: 13156}
+    - Class: 114
+      Script: {instanceID: 13188}
+    - Class: 114
+      Script: {instanceID: 13662}
+    - Class: 114
+      Script: {instanceID: 13730}
+    - Class: 114
+      Script: {instanceID: 14132}
+    - Class: 114
+      Script: {instanceID: 14278}
+    - Class: 114
+      Script: {instanceID: 14280}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 198
+      Script: {instanceID: 0}
+    - Class: 199
+      Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    - Class: 250
+      Script: {instanceID: 0}
+    - Class: 330
+      Script: {instanceID: 0}
+    - Class: 687078895
+      Script: {instanceID: 0}
     Assets/Scenes/Menu.unity:
     - Class: 1
       Script: {instanceID: 0}
@@ -63,17 +164,17 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11152}
+      Script: {instanceID: 11154}
     - Class: 114
       Script: {instanceID: 11176}
     - Class: 114
-      Script: {instanceID: 11466}
+      Script: {instanceID: 11468}
     - Class: 114
-      Script: {instanceID: 11784}
+      Script: {instanceID: 11788}
     - Class: 114
-      Script: {instanceID: 13656}
+      Script: {instanceID: 13662}
     - Class: 114
-      Script: {instanceID: 14272}
+      Script: {instanceID: 14280}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -91,6 +192,208 @@ ScriptsOnlyBuild:
     - Class: 223
       Script: {instanceID: 0}
     - Class: 224
+      Script: {instanceID: 0}
+    Assets/Scenes/Mercury.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 50
+      Script: {instanceID: 0}
+    - Class: 58
+      Script: {instanceID: 0}
+    - Class: 60
+      Script: {instanceID: 0}
+    - Class: 70
+      Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 11154}
+    - Class: 114
+      Script: {instanceID: 11176}
+    - Class: 114
+      Script: {instanceID: 11272}
+    - Class: 114
+      Script: {instanceID: 11468}
+    - Class: 114
+      Script: {instanceID: 11522}
+    - Class: 114
+      Script: {instanceID: 11598}
+    - Class: 114
+      Script: {instanceID: 11794}
+    - Class: 114
+      Script: {instanceID: 12228}
+    - Class: 114
+      Script: {instanceID: 13156}
+    - Class: 114
+      Script: {instanceID: 13188}
+    - Class: 114
+      Script: {instanceID: 13662}
+    - Class: 114
+      Script: {instanceID: 13730}
+    - Class: 114
+      Script: {instanceID: 14132}
+    - Class: 114
+      Script: {instanceID: 14278}
+    - Class: 114
+      Script: {instanceID: 14280}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 198
+      Script: {instanceID: 0}
+    - Class: 199
+      Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    - Class: 250
+      Script: {instanceID: 0}
+    - Class: 330
+      Script: {instanceID: 0}
+    - Class: 687078895
+      Script: {instanceID: 0}
+    Assets/Scenes/Neptune.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 50
+      Script: {instanceID: 0}
+    - Class: 58
+      Script: {instanceID: 0}
+    - Class: 60
+      Script: {instanceID: 0}
+    - Class: 61
+      Script: {instanceID: 0}
+    - Class: 62
+      Script: {instanceID: 0}
+    - Class: 70
+      Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 11154}
+    - Class: 114
+      Script: {instanceID: 11176}
+    - Class: 114
+      Script: {instanceID: 11272}
+    - Class: 114
+      Script: {instanceID: 11448}
+    - Class: 114
+      Script: {instanceID: 11468}
+    - Class: 114
+      Script: {instanceID: 11522}
+    - Class: 114
+      Script: {instanceID: 11794}
+    - Class: 114
+      Script: {instanceID: 11898}
+    - Class: 114
+      Script: {instanceID: 12228}
+    - Class: 114
+      Script: {instanceID: 12464}
+    - Class: 114
+      Script: {instanceID: 12568}
+    - Class: 114
+      Script: {instanceID: 13156}
+    - Class: 114
+      Script: {instanceID: 13188}
+    - Class: 114
+      Script: {instanceID: 13262}
+    - Class: 114
+      Script: {instanceID: 13662}
+    - Class: 114
+      Script: {instanceID: 13730}
+    - Class: 114
+      Script: {instanceID: 13814}
+    - Class: 114
+      Script: {instanceID: 14132}
+    - Class: 114
+      Script: {instanceID: 14278}
+    - Class: 114
+      Script: {instanceID: 14280}
+    - Class: 114
+      Script: {instanceID: 14352}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 198
+      Script: {instanceID: 0}
+    - Class: 199
+      Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    - Class: 250
+      Script: {instanceID: 0}
+    - Class: 330
+      Script: {instanceID: 0}
+    - Class: 687078895
       Script: {instanceID: 0}
     Assets/Scenes/Pluto.unity:
     - Class: 1
@@ -126,33 +429,33 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11152}
+      Script: {instanceID: 11154}
     - Class: 114
       Script: {instanceID: 11176}
     - Class: 114
       Script: {instanceID: 11272}
     - Class: 114
-      Script: {instanceID: 11466}
+      Script: {instanceID: 11468}
     - Class: 114
-      Script: {instanceID: 11520}
+      Script: {instanceID: 11522}
     - Class: 114
-      Script: {instanceID: 11790}
+      Script: {instanceID: 11794}
     - Class: 114
-      Script: {instanceID: 12222}
+      Script: {instanceID: 12228}
     - Class: 114
-      Script: {instanceID: 13150}
+      Script: {instanceID: 13156}
     - Class: 114
-      Script: {instanceID: 13182}
+      Script: {instanceID: 13188}
     - Class: 114
-      Script: {instanceID: 13656}
+      Script: {instanceID: 13662}
     - Class: 114
-      Script: {instanceID: 13724}
+      Script: {instanceID: 13730}
     - Class: 114
-      Script: {instanceID: 14124}
+      Script: {instanceID: 14132}
     - Class: 114
-      Script: {instanceID: 14270}
+      Script: {instanceID: 14278}
     - Class: 114
-      Script: {instanceID: 14272}
+      Script: {instanceID: 14280}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -217,35 +520,35 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11152}
+      Script: {instanceID: 11154}
     - Class: 114
       Script: {instanceID: 11176}
     - Class: 114
       Script: {instanceID: 11272}
     - Class: 114
-      Script: {instanceID: 11466}
+      Script: {instanceID: 11468}
     - Class: 114
-      Script: {instanceID: 11520}
+      Script: {instanceID: 11522}
     - Class: 114
-      Script: {instanceID: 11790}
+      Script: {instanceID: 11794}
     - Class: 114
-      Script: {instanceID: 12222}
+      Script: {instanceID: 12228}
     - Class: 114
-      Script: {instanceID: 13150}
+      Script: {instanceID: 13156}
     - Class: 114
-      Script: {instanceID: 13182}
+      Script: {instanceID: 13188}
     - Class: 114
-      Script: {instanceID: 13502}
+      Script: {instanceID: 13508}
     - Class: 114
-      Script: {instanceID: 13656}
+      Script: {instanceID: 13662}
     - Class: 114
-      Script: {instanceID: 13724}
+      Script: {instanceID: 13730}
     - Class: 114
-      Script: {instanceID: 14124}
+      Script: {instanceID: 14132}
     - Class: 114
-      Script: {instanceID: 14270}
+      Script: {instanceID: 14278}
     - Class: 114
-      Script: {instanceID: 14272}
+      Script: {instanceID: 14280}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -310,41 +613,41 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11152}
+      Script: {instanceID: 11154}
     - Class: 114
       Script: {instanceID: 11176}
     - Class: 114
       Script: {instanceID: 11272}
     - Class: 114
-      Script: {instanceID: 11466}
+      Script: {instanceID: 11468}
     - Class: 114
-      Script: {instanceID: 11520}
+      Script: {instanceID: 11522}
     - Class: 114
-      Script: {instanceID: 11596}
+      Script: {instanceID: 11598}
     - Class: 114
-      Script: {instanceID: 11790}
+      Script: {instanceID: 11794}
     - Class: 114
-      Script: {instanceID: 12222}
+      Script: {instanceID: 12228}
     - Class: 114
-      Script: {instanceID: 12458}
+      Script: {instanceID: 12464}
     - Class: 114
-      Script: {instanceID: 12562}
+      Script: {instanceID: 12568}
     - Class: 114
-      Script: {instanceID: 12826}
+      Script: {instanceID: 12832}
     - Class: 114
-      Script: {instanceID: 13150}
+      Script: {instanceID: 13156}
     - Class: 114
-      Script: {instanceID: 13182}
+      Script: {instanceID: 13188}
     - Class: 114
-      Script: {instanceID: 13656}
+      Script: {instanceID: 13662}
     - Class: 114
-      Script: {instanceID: 13724}
+      Script: {instanceID: 13730}
     - Class: 114
-      Script: {instanceID: 14124}
+      Script: {instanceID: 14132}
     - Class: 114
-      Script: {instanceID: 14270}
+      Script: {instanceID: 14278}
     - Class: 114
-      Script: {instanceID: 14272}
+      Script: {instanceID: 14280}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -406,7 +709,7 @@ ScriptsOnlyBuild:
     className: TMP_Dropdown
   - hash:
       serializedVersion: 2
-      Hash: 285f3eaf11e19d6f13c5de37617001ef
+      Hash: 78f2300b352a17c6c6070530022aebc6
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Controller
@@ -434,6 +737,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: ActivationTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 51c31a34d3051b3234e98e9e570ab12c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Snow_sound
   - hash:
       serializedVersion: 2
       Hash: aeb62f729c52c814dec86c47dcac1471
@@ -520,6 +829,12 @@ ScriptsOnlyBuild:
     className: PhysicsRaycaster
   - hash:
       serializedVersion: 2
+      Hash: b3f55634f7b9b602d3c1bd792e9ac78b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Volcano
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -578,6 +893,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.2D.PixelPerfect.dll
     namespaceName: UnityEngine.U2D
     className: PixelPerfectCamera
+  - hash:
+      serializedVersion: 2
+      Hash: 0b9efe39b887e3ab567e744adb694505
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Cloud_Neptune
   - hash:
       serializedVersion: 2
       Hash: 5ab533713adae59372fb3e10a585c186
@@ -832,6 +1153,12 @@ ScriptsOnlyBuild:
     className: Time_show
   - hash:
       serializedVersion: 2
+      Hash: a2a61acdb49c7f3d060ed5ee7840ab9d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Neptune_features
+  - hash:
+      serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -910,7 +1237,7 @@ ScriptsOnlyBuild:
     className: Dropdown
   - hash:
       serializedVersion: 2
-      Hash: e4768bf557300270aaaa84c12fe9553c
+      Hash: eaeb4d5cb77ddac989ea155774181e43
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Meteor_spawner
@@ -946,6 +1273,12 @@ ScriptsOnlyBuild:
     className: ToggleGroup
   - hash:
       serializedVersion: 2
+      Hash: c4f358182990faf43ae7b12d1b89de44
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Snow
+  - hash:
+      serializedVersion: 2
       Hash: 76684e2ad5bd56fd25edfcb02a74263a
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -962,4 +1295,7 @@ ScriptsOnlyBuild:
   - Assets/Scenes/Pluto.unity
   - Assets/Scenes/Saturn.unity
   - Assets/Scenes/Venus.unity
-  playerPath: /home/moscow/Desktop/Little_planet_versions/Alpha 3.1/Alpha 3.1.x86_64
+  - Assets/Scenes/Mars.unity
+  - Assets/Scenes/Neptune.unity
+  - Assets/Scenes/Mercury.unity
+  playerPath: /home/moscow/Desktop/Little_planet_versions/Alpha 6.0/Alpha 6.0.x86_64

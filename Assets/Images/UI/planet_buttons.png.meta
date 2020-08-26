@@ -1,0 +1,359 @@
+fileFormatVersion: 2
+guid: 5f67074a371d6e83d9f2846d9776bf78
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -405084560779694627
+    second: Neptune_button
+  - first:
+      213: -6286699699855751201
+    second: Venus_button
+  - first:
+      213: 366293472471005064
+    second: planet_buttons_2
+  - first:
+      213: 1184488137708066974
+    second: planet_buttons_3
+  - first:
+      213: 1241725587678390383
+    second: Mercury_button
+  - first:
+      213: 6778385183334730270
+    second: planet_buttons_5
+  - first:
+      213: -8732450597464332697
+    second: planet_buttons_6
+  - first:
+      213: 538919947960403333
+    second: planet_buttons_7
+  - first:
+      213: 7931865137726140500
+    second: planet_buttons_8
+  - first:
+      213: -6611237048252400795
+    second: planet_buttons_9
+  - first:
+      213: -3775238312277071177
+    second: planet_buttons_10
+  - first:
+      213: -5049494775600243524
+    second: planet_buttons_11
+  - first:
+      213: -5884858563226713366
+    second: planet_buttons_12
+  - first:
+      213: -1698178607473368869
+    second: Saturn_button
+  - first:
+      213: -8833030478055921596
+    second: planet_buttons_14
+  - first:
+      213: 4270567100059573084
+    second: planet_buttons_15
+  - first:
+      213: 4090910292659997378
+    second: planet_buttons_16
+  - first:
+      213: -1994298364447656494
+    second: planet_buttons_17
+  - first:
+      213: -7231626172647710458
+    second: planet_buttons_18
+  - first:
+      213: -3479418925578412132
+    second: planet_buttons_19
+  - first:
+      213: -7783513493377333639
+    second: planet_buttons_20
+  - first:
+      213: 4336526743626336181
+    second: planet_buttons_21
+  - first:
+      213: 510401985737780044
+    second: planet_buttons_22
+  - first:
+      213: -8362773172739414772
+    second: planet_buttons_23
+  - first:
+      213: -7219376931928503801
+    second: Pluto_button
+  - first:
+      213: 8567723838132413608
+    second: planet_buttons_25
+  - first:
+      213: 4271642166756922155
+    second: planet_buttons_26
+  - first:
+      213: -5510101323897821432
+    second: planet_buttons_27
+  - first:
+      213: -6478133904866467181
+    second: Mars_button
+  - first:
+      213: 1616343190825031800
+    second: Neptune_button
+  - first:
+      213: -652989504456099121
+    second: Venus_button
+  - first:
+      213: -1762349008558585922
+    second: planet_buttons_2
+  - first:
+      213: 485180470331456490
+    second: planet_buttons_3
+  - first:
+      213: -7959870384328813200
+    second: Mercury_button
+  - first:
+      213: 2644456524744224138
+    second: planet_buttons_5
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Neptune_button
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 536
+        width: 369
+        height: 211
+      alignment: 9
+      pivot: {x: 0.288, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8785f3c71976e6610800000000000000
+      internalID: 1616343190825031800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Venus_button
+      rect:
+        serializedVersion: 2
+        x: 1005
+        y: 560
+        width: 366
+        height: 215
+      alignment: 9
+      pivot: {x: 0.29, y: 0.492}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcaf5d0618d10f6f0800000000000000
+      internalID: -652989504456099121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mercury_button
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 500
+        width: 210
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 075dde30f0cd88190800000000000000
+      internalID: -7959870384328813200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn_button
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 181
+        width: 523
+        height: 245
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd0e168cd8bde68e0800000000000000
+      internalID: -1698178607473368869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pluto_button
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 37
+        width: 210
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70a80c82eee9fcb90800000000000000
+      internalID: -7219376931928503801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mars_button
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 18
+        width: 336
+        height: 304
+      alignment: 9
+      pivot: {x: 0.688, y: 0.346}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3922501498b0916a0800000000000000
+      internalID: -6478133904866467181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

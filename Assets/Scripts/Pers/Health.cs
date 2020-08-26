@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+﻿using UnityEngine.SceneManagement;
 
 public class Health : MonoBehaviour
 {
@@ -19,9 +20,9 @@ public class Health : MonoBehaviour
         return HP;
     }
 
-    public void Receive_damage(float damage)
+    public void Receive_damage(float damage, bool continious = false)
     {
-        if (damage < 1)
+        if ((damage < 1) && !continious)
             return;
             
         HP -= damage;
@@ -33,7 +34,7 @@ public class Health : MonoBehaviour
             if (!game_over_msg)
             {
                 Debug.Log("Game Over. Result: " + Time_show.Time_min_sec());
-                Application.Quit();
+		SceneManager.LoadScene("Menu");
                 game_over_msg = true;
             }
         }
