@@ -1,18 +1,24 @@
-﻿using UnityEngine;
-﻿using UnityEngine.SceneManagement;
+﻿using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Health : MonoBehaviour
 {
     
     public float HP_max;
+    public GameObject canvas;
+    private GameObject main_screen, game_over_screen;
     private float HP;
-    private bool game_over_msg = false, damaged_right_now = false;
+    private bool damaged_right_now = false;
     private Animator animator;
 
     void Start()
     {
         HP = HP_max;
         animator = GetComponent<Animator>();
+
+        main_screen = canvas.transform.GetChild(2).gameObject;
+        game_over_screen = canvas.transform.GetChild(1).gameObject;
     }
 
     public float Show_HP()
@@ -31,12 +37,8 @@ public class Health : MonoBehaviour
         if (HP <= 0)
         {
             HP = 0;
-            if (!game_over_msg)
-            {
-                Debug.Log("Game Over. Result: " + Time_show.Time_min_sec());
-		SceneManager.LoadScene("Menu");
-                game_over_msg = true;
-            }
+            
+            Game_over();
         }
     }
 
@@ -50,6 +52,35 @@ public class Health : MonoBehaviour
         else
         {
             animator.SetBool("damaged", false);
+        }
+    }
+
+    public void Game_over()
+    {
+        Time.timeScale = 0;
+        main_screen.SetActive(false);
+        game_over_screen.SetActive(true);
+
+        game_over_screen.transform.GetChild(2).GetChild(1).gameObject.GetComponent<UnityEngine.UI.Text>().text = 
+            Time_show.Time_min_sec();
+        
+        List<int> records = Menu_functions.Read_records(gameObject.scene.name);
+        if ((records.Count == 0) || records[0] < Time_show.Time_sec())
+        {
+            game_over_screen.transform.GetChild(4).gameObject.SetActive(true);
+            game_over_screen.transform.GetChild(1).gameObject.GetComponent<UnityEngine.UI.Text>().text =
+                "New record!";
+        }
+        else if ((records.Count < Menu_functions.records_count) ||
+            (records[records.Count - 1] < Time_show.Time_sec()))
+        {
+            game_over_screen.transform.GetChild(4).gameObject.SetActive(true);
+            game_over_screen.transform.GetChild(1).gameObject.GetComponent<UnityEngine.UI.Text>().text =
+                "Good result!";
+        }
+        else
+        {
+            game_over_screen.transform.GetChild(4).gameObject.SetActive(false);
         }
     }
 }

@@ -427,6 +427,11 @@ PrefabInstance:
       propertyPath: pause_screen
       value: 
       objectReference: {fileID: 1569463783}
+    - target: {fileID: 6626567693301278535, guid: bce60546b560504c6b83ebaeedd8369b,
+        type: 3}
+      propertyPath: canvas
+      value: 
+      objectReference: {fileID: 6958436830257236000}
     - target: {fileID: 6626567693301278585, guid: bce60546b560504c6b83ebaeedd8369b,
         type: 3}
       propertyPath: m_Name
@@ -618,6 +623,12 @@ PrefabInstance:
       objectReference: {fileID: 1436166877}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce0f928f200542b8eb00398cc8096773, type: 3}
+--- !u!1 &6958436830257236000 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6958436832128835276, guid: ce0f928f200542b8eb00398cc8096773,
+    type: 3}
+  m_PrefabInstance: {fileID: 6958436830257235999}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7350387268517441502
 PrefabInstance:
   m_ObjectHideFlags: 0

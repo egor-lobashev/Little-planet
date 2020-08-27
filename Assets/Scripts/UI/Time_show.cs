@@ -16,11 +16,16 @@ public class Time_show : MonoBehaviour
         text_component.text = Time_min_sec();
     }
 
-    static public string Time_min_sec()
+    public static string Time_min_sec()
     {
         int time = (int)(Time.time - start_time);
         int minutes = time/60;
         int seconds = time%60;
         return minutes.ToString() + (seconds>=10 ? ":" : ":0") + seconds.ToString();
+    }
+
+    public static int Time_sec()
+    {
+        return (int)(Time.time - start_time);
     }
 }

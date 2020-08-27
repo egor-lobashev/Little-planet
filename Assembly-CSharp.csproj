@@ -60,6 +60,7 @@
      <Compile Include="Assets\Scripts\UI\Menu_functions.cs" />
      <Compile Include="Assets\Scripts\UI\Pause.cs" />
      <Compile Include="Assets\Scripts\UI\Time_show.cs" />
+     <Compile Include="Assets\Scripts\UI\Toolbar.cs" />
     <Reference Include="UnityEngine">
         <HintPath>/home/moscow/Unity/Hub/Editor/2019.4.1f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
