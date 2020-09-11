@@ -770,7 +770,7 @@ ScriptsOnlyBuild:
     className: TMP_Dropdown
   - hash:
       serializedVersion: 2
-      Hash: 36d85941b114ff195b67ae5e61016564
+      Hash: 48219ce00aea5cb5e2d056da53d2d2cc
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Controller
@@ -908,7 +908,7 @@ ScriptsOnlyBuild:
     className: Menu_functions
   - hash:
       serializedVersion: 2
-      Hash: 6ee0c6f50c99b2545851c403f47833da
+      Hash: 2c101b57af4de3ac779c52b6aedee054
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Audio_controller
@@ -1046,7 +1046,7 @@ ScriptsOnlyBuild:
     className: ScrollRect
   - hash:
       serializedVersion: 2
-      Hash: 0f2352727d77f7ee6fc2173e3f6201d2
+      Hash: b7d7b703859c5b811915d2568c123b6a
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Cloud_spawner
@@ -1365,4 +1365,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/Mars.unity
   - Assets/Scenes/Neptune.unity
   - Assets/Scenes/Mercury.unity
-  playerPath: /home/moscow/Desktop/Little_planet_versions/Alpha 7.2/Alpha 7.2.x86_64
+  playerPath: /home/moscow/Desktop/Little_planet_versions/Beta 1.0/Beta 1.0.x86_64
