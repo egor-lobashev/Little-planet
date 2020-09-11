@@ -9,6 +9,7 @@ public class Pause : MonoBehaviour
     void Start()
     {
         Time.timeScale = 1;
+	AudioListener.pause = false;
     }
 
     void Update()
@@ -17,6 +18,7 @@ public class Pause : MonoBehaviour
         {
             Time.timeScale = 0;
             pause_screen.SetActive(true);
+            AudioListener.pause = true;
         }
     }
 
@@ -24,6 +26,7 @@ public class Pause : MonoBehaviour
     {
         Time.timeScale = 1;
         pause_screen.SetActive(false);
+        AudioListener.pause = false;
     }
 
     public void Quit_to_menu()
@@ -59,5 +62,10 @@ public class Pause : MonoBehaviour
             PlayerPrefs.SetInt(planet + i.ToString(), records[i]);
             PlayerPrefs.SetString(planet + i.ToString() + "_name", record_names[i]);
         }
+    }
+
+    public void Retry()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }

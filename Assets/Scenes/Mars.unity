@@ -306,7 +306,7 @@ PrefabInstance:
     - target: {fileID: 462153632466610035, guid: 76860797e68e87068a72cf9f8184da3f,
         type: 3}
       propertyPath: first_period
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 462153632466610035, guid: 76860797e68e87068a72cf9f8184da3f,
         type: 3}
@@ -314,6 +314,31 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2377678733123546782, guid: 66310b235a0e60019aad6bddb5bcf043,
         type: 3}
+    - target: {fileID: 462153632466610035, guid: 76860797e68e87068a72cf9f8184da3f,
+        type: 3}
+      propertyPath: growth_speed
+      value: 0.004
+      objectReference: {fileID: 0}
+    - target: {fileID: 462153632466610035, guid: 76860797e68e87068a72cf9f8184da3f,
+        type: 3}
+      propertyPath: delete_time
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 462153632466610035, guid: 76860797e68e87068a72cf9f8184da3f,
+        type: 3}
+      propertyPath: finish_time
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 462153632466610035, guid: 76860797e68e87068a72cf9f8184da3f,
+        type: 3}
+      propertyPath: sapwn_period_min
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 462153632466610035, guid: 76860797e68e87068a72cf9f8184da3f,
+        type: 3}
+      propertyPath: finish_time_max
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 462153632466610036, guid: 76860797e68e87068a72cf9f8184da3f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -378,6 +403,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2871172366132644628, guid: 6def4dc521e5957c4bd7db6607c2e870,
+        type: 3}
+      propertyPath: sapwn_period
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2871172366132644628, guid: 6def4dc521e5957c4bd7db6607c2e870,
+        type: 3}
+      propertyPath: sapwn_period_range
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2871172366132644628, guid: 6def4dc521e5957c4bd7db6607c2e870,
+        type: 3}
+      propertyPath: life_time
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 2871172366132644628, guid: 6def4dc521e5957c4bd7db6607c2e870,
+        type: 3}
+      propertyPath: life_time_range
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 2871172366132644629, guid: 6def4dc521e5957c4bd7db6607c2e870,
         type: 3}
       propertyPath: m_Name

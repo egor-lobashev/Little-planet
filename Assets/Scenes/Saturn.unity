@@ -924,11 +924,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2871172366132644628, guid: 6def4dc521e5957c4bd7db6607c2e870,
-        type: 3}
-      propertyPath: sapwn_period
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 2871172366132644629, guid: 6def4dc521e5957c4bd7db6607c2e870,
         type: 3}
       propertyPath: m_Name

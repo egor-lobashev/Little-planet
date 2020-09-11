@@ -8,6 +8,7 @@ public class Snow : MonoBehaviour
 
     private float not_moving;
     private bool already_snowed = false;
+    private GameObject summoned_snow;
     private Rigidbody2D rb;
     private BoxCollider2D box_collider;
 
@@ -24,11 +25,18 @@ public class Snow : MonoBehaviour
 
         not_moving += Time.fixedDeltaTime;
 
-        if ((not_moving >= snow_time) && !already_snowed)
+        if (not_moving >= snow_time)
         {
-            Summon_snow();
-            already_snowed = true;
-            not_moving = 0;
+            if (already_snowed)
+            {
+                summoned_snow.GetComponent<Telomere>().life_time = 20;
+            }
+            else
+            {
+                summoned_snow = Summon_snow();
+                already_snowed = true;
+                not_moving = 0;
+            }
         }
 
         if (rb.angularVelocity != 0)
@@ -38,7 +46,7 @@ public class Snow : MonoBehaviour
         }
     }
 
-    void Summon_snow()
+    GameObject Summon_snow()
     {
         GameObject new_snow = Object.Instantiate(snow);
 
@@ -48,5 +56,7 @@ public class Snow : MonoBehaviour
         new_snow.transform.GetChild(0).gameObject.GetComponent<SpriteRenderer>().sprite =
             snow_sprites.GetSprite("snow_" + number.ToString());
         new_snow.transform.rotation = transform.rotation;
+
+        return new_snow;
     }
 }

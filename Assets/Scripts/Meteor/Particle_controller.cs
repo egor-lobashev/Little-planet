@@ -54,6 +54,8 @@ public class Particle_controller : MonoBehaviour
             dust.gameObject.GetComponent<Telomere>().life_time =
                 dust.main.duration + dust.main.startLifetime.constantMax;
             dust.GetComponent<AudioSource>().Play();
+            dust.GetComponent<Rigidbody2D>().velocity =
+                transform.parent.gameObject.GetComponent<Rigidbody2D>().velocity;
         }
 
         transform.GetChild(1).eulerAngles = default_direction;

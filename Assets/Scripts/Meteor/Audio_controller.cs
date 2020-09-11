@@ -3,7 +3,7 @@
 public class Audio_controller : MonoBehaviour
 {
     public AudioSource falling, explode, small_explode, small_stones, damage, fire_damage;
-    public float falling_range, explode_range, small_explode_range, max_volume_damage, small_stones_delay;
+    public float falling_range, explode_range, small_explode_range, small_stones_delay;
     private bool set_parameters = false, first_collision = true;
 
     public static float last_start_of_small_stones = 0;
@@ -41,9 +41,9 @@ public class Audio_controller : MonoBehaviour
             last_start_of_small_stones = Time.time;
         }
 
-        if (other.gameObject.tag == "Player")
+        if ((other.gameObject.tag == "Player") && (received_damage >= Health.min_damage))
         {
-            damage.PlayOneShot(damage.clip, received_damage / max_volume_damage);
+            damage.Play();
         }
 
         if (first_collision)

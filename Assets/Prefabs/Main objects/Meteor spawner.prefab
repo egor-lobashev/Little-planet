@@ -43,22 +43,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a657f34f505d405ecb3fe399f2b14cde, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sapwn_period: 3
   sapwn_period_range: 1
+  sapwn_period: 5
+  growth_speed: 0.0025
   spawn_radius: 10
+  max_mass: 0.8
   velocity: 5
   min_size: 0.5
   angular_velocity: 100
   angular_drag: 5
-  life_time: 14
+  life_time: 22
   life_time_range: 3
   explode_force: 2.5
   explode_radius: 2
   momental_damage: 2
   continious_damage: 5
   cooldown: 0.5
-  dark_time: 3
+  dark_time: 5
   smooth_time: 3
+  timer: 3
   controller: {fileID: 9100000, guid: afe80d7cb2814dd919ca93f73531ec5e, type: 2}
   dark_meteors: {fileID: 4343727234628468602, guid: e5077e1363f3a7af28c76f295cfb053d,
     type: 2}
@@ -66,3 +69,4 @@ MonoBehaviour:
     type: 3}
   particle_child_prefab: {fileID: 4108666041044173307, guid: 83357939f000205499661e2067bdb2a8,
     type: 3}
+  sun_is_close: 0

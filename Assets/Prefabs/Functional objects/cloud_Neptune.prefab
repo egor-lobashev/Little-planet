@@ -9777,6 +9777,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   snow: {fileID: 7085280346645953878, guid: 26eade6a916de7a0e814ac7000d70308, type: 3}
-  snow_time: 2
+  snow_time: 1.5
   snow_sprites: {fileID: 4343727234628468602, guid: c58967ae05b52138c914313d93968c1b,
     type: 2}

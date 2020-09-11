@@ -38,6 +38,12 @@ public class Meteor_damage : MonoBehaviour
                 ((Vector2)(transform.position - other.transform.position)).normalized);
             received_damage = momental_damage * Mathf.Pow(velocity_projection, 2) * mass;
             other.gameObject.GetComponent<Health>().Receive_damage(received_damage);
+
+            if (hot && other.gameObject.GetComponent<Controller>().ground_is_meteor &&
+                other.gameObject.GetComponent<Controller>().grounded)
+            {
+                other.gameObject.GetComponent<Controller>().Jump();
+            }
         }
 
         audio_controller.Collision_sound(other, received_damage);
@@ -49,7 +55,7 @@ public class Meteor_damage : MonoBehaviour
         {
             if (ready_to_attack)
             {
-                other.gameObject.GetComponent<Health>().Receive_damage(continious_damage);
+                other.gameObject.GetComponent<Health>().Receive_damage(continious_damage, true);
                 audio_controller.Fire_damage_sound();
                 timer = cooldown;
                 ready_to_attack = false;

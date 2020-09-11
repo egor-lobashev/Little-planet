@@ -283,6 +283,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2871172366132644628, guid: 6def4dc521e5957c4bd7db6607c2e870,
+        type: 3}
+      propertyPath: sapwn_period
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2871172366132644628, guid: 6def4dc521e5957c4bd7db6607c2e870,
+        type: 3}
+      propertyPath: growth_speed
+      value: 0.003
+      objectReference: {fileID: 0}
     - target: {fileID: 2871172366132644629, guid: 6def4dc521e5957c4bd7db6607c2e870,
         type: 3}
       propertyPath: m_Name
@@ -557,6 +567,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 23294366}
+    - target: {fileID: 7005213369969336031, guid: ce0f928f200542b8eb00398cc8096773,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce0f928f200542b8eb00398cc8096773, type: 3}
 --- !u!1 &1318922085 stripped

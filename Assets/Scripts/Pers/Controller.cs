@@ -5,10 +5,10 @@ public class Controller : MonoBehaviour
 {
     public float speed, jump_force;
     public float ground_height = 0.5f, ground_radius = 0.05f, bumper_height = 0.35f, bumper_radius = 0.15f;
-    public bool sun_is_close = false;
+    public bool sun_is_close = false, ground_is_meteor = false;
     private Rigidbody2D rb;
     private Animator animator;
-    private bool grounded;
+    public bool grounded;
 
     void Start()
     {
@@ -41,21 +41,28 @@ public class Controller : MonoBehaviour
 
         grounded =
             (Physics2D.OverlapCircle((Vector2)transform.position - up*ground_height, ground_radius, (1 << 8) + (1 << 9)) &&
-            !Physics2D.OverlapCircle((Vector2)transform.position - up*bumper_height, bumper_radius, (1 << 8) + (1 << 9)));
+            !Physics2D.OverlapCircle((Vector2)transform.position - up*bumper_height, bumper_radius, (1 << 8)));
+        ground_is_meteor = false;
+        if (Physics2D.OverlapCircle((Vector2)transform.position - up*ground_height, ground_radius, (1 << 9)))
+            ground_is_meteor = true;
 
         animator.SetBool("grounded", grounded);
     }
 
     void Update()
     {
-        Vector2 pos = transform.position;
-
         if (Input.GetKeyDown(KeyCode.Space) && grounded)
         {
-            rb.AddForce(pos.normalized*jump_force, ForceMode2D.Impulse);
+            Jump();
         }
 
         animator.SetBool("going_right", Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow));
         animator.SetBool("going_left", Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow));
+    }
+
+    public void Jump()
+    {
+        Vector2 pos = transform.position;
+        rb.AddForce(pos.normalized*jump_force, ForceMode2D.Impulse);
     }
 }

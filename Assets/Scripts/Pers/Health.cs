@@ -11,6 +11,7 @@ public class Health : MonoBehaviour
     private float HP;
     private bool damaged_right_now = false;
     private Animator animator;
+    public static float min_damage = 1f;
 
     void Start()
     {
@@ -28,7 +29,7 @@ public class Health : MonoBehaviour
 
     public void Receive_damage(float damage, bool continious = false)
     {
-        if ((damage < 1) && !continious)
+        if ((damage < min_damage) && !continious)
             return;
             
         HP -= damage;
@@ -59,6 +60,7 @@ public class Health : MonoBehaviour
     {
         Time.timeScale = 0;
         main_screen.SetActive(false);
+	AudioListener.pause = true;
         game_over_screen.SetActive(true);
 
         game_over_screen.transform.GetChild(2).GetChild(1).gameObject.GetComponent<UnityEngine.UI.Text>().text = 

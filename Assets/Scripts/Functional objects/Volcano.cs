@@ -22,6 +22,8 @@ public class Volcano : MonoBehaviour
     {
         float local_time = Time.time - start_time;
         animator.SetFloat("time", local_time);
+        if (local_time >= finish_time - 1)
+            animator.SetBool("exit", true);
 
         if (local_time >= warning_time && !eruption_started)
         {
