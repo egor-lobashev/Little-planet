@@ -59,8 +59,12 @@
      <Compile Include="Assets\Scripts\UI\HP_show.cs" />
      <Compile Include="Assets\Scripts\UI\Menu_functions.cs" />
      <Compile Include="Assets\Scripts\UI\Pause.cs" />
+     <Compile Include="Assets\Scripts\UI\Star_counter.cs" />
+     <Compile Include="Assets\Scripts\UI\Star_scaler.cs" />
+     <Compile Include="Assets\Scripts\UI\Star_show.cs" />
      <Compile Include="Assets\Scripts\UI\Time_show.cs" />
      <Compile Include="Assets\Scripts\UI\Toolbar.cs" />
+     <Compile Include="Assets\Scripts\UI\Unlock_button.cs" />
     <Reference Include="UnityEngine">
         <HintPath>/home/moscow/Unity/Hub/Editor/2019.4.1f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>

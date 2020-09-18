@@ -31,6 +31,9 @@ public class Pause : MonoBehaviour
 
     public void Quit_to_menu()
     {
+        int stars = PlayerPrefs.GetInt("stars");
+        PlayerPrefs.SetInt("stars", stars + Star_counter.stars);
+        
         SceneManager.LoadScene(0);
     }
 

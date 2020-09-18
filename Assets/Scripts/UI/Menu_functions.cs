@@ -8,6 +8,7 @@ public class Menu_functions : MonoBehaviour
     public GameObject records_times, records_names, records_planets;
     public static int records_count = 5;
     private static bool from_game = false;
+    private int stars = 0;
 
     void Start()
     {
@@ -16,6 +17,13 @@ public class Menu_functions : MonoBehaviour
             from_game = false;
             Open_menu(transform.GetChild(1).gameObject);
         }
+
+        if (PlayerPrefs.HasKey("stars"))
+        {
+            stars = PlayerPrefs.GetInt("stars");
+        }
+        else
+            PlayerPrefs.SetInt("stars", 0);
     }
 
     void Update()
@@ -195,5 +203,11 @@ public class Menu_functions : MonoBehaviour
             records_names.GetComponent<UnityEngine.UI.Text>().text = Record_names_string(planet);
             records_planets.GetComponent<UnityEngine.UI.Text>().text = "";
         }
+    }
+
+    public void Reset()
+    {
+        PlayerPrefs.SetInt("stars", 0);
+        SceneManager.LoadScene(0);
     }
 }

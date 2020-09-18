@@ -60,12 +60,14 @@ public class Health : MonoBehaviour
     {
         Time.timeScale = 0;
         main_screen.SetActive(false);
-	AudioListener.pause = true;
+	    AudioListener.pause = true;
         game_over_screen.SetActive(true);
 
         game_over_screen.transform.GetChild(2).GetChild(1).gameObject.GetComponent<UnityEngine.UI.Text>().text = 
             Time_show.Time_min_sec();
-        
+        game_over_screen.transform.GetChild(2).GetChild(2).GetChild(0).gameObject.GetComponent<UnityEngine.UI.Text>().text = 
+            Star_counter.stars.ToString();
+            
         List<int> records = Menu_functions.Read_records(gameObject.scene.name);
         if ((records.Count == 0) || records[0] < Time_show.Time_sec())
         {
