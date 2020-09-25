@@ -5,7 +5,7 @@ public class Button_scaler : MonoBehaviour
 {
     public GameObject[] buttons;
 
-    void Start()
+    void Update()
     {
         foreach (GameObject button in buttons)
         {

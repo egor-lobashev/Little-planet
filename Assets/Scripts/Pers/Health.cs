@@ -72,19 +72,24 @@ public class Health : MonoBehaviour
         if ((records.Count == 0) || records[0] < Time_show.Time_sec())
         {
             game_over_screen.transform.GetChild(4).gameObject.SetActive(true);
-            game_over_screen.transform.GetChild(1).gameObject.GetComponent<UnityEngine.UI.Text>().text =
-                "New record!";
+            game_over_screen.transform.GetChild(1).gameObject.SetActive(false);
+            game_over_screen.transform.GetChild(6).gameObject.SetActive(false);
+            game_over_screen.transform.GetChild(7).gameObject.SetActive(true);
         }
         else if ((records.Count < Menu_functions.records_count) ||
             (records[records.Count - 1] < Time_show.Time_sec()))
         {
             game_over_screen.transform.GetChild(4).gameObject.SetActive(true);
-            game_over_screen.transform.GetChild(1).gameObject.GetComponent<UnityEngine.UI.Text>().text =
-                "Good result!";
+            game_over_screen.transform.GetChild(1).gameObject.SetActive(false);
+            game_over_screen.transform.GetChild(6).gameObject.SetActive(true);
+            game_over_screen.transform.GetChild(7).gameObject.SetActive(false);
         }
         else
         {
             game_over_screen.transform.GetChild(4).gameObject.SetActive(false);
+            game_over_screen.transform.GetChild(1).gameObject.SetActive(true);
+            game_over_screen.transform.GetChild(6).gameObject.SetActive(false);
+            game_over_screen.transform.GetChild(7).gameObject.SetActive(false);
         }
     }
 }

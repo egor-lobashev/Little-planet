@@ -143,7 +143,11 @@ public class Menu_functions : MonoBehaviour
 
             List<int>[] all_records_times = new List<int>[6];
             List<string>[] all_records_names = new List<string>[6];
+
             string[] planets = {"Mercury", "Neptune", "Mars", "Venus", "Saturn", "Pluto"};
+            string[] planets_lang = Translator.language == "russian" ?
+                new string[] {"Меркурий", "Нептун", "Марс", "Венера", "Сатурн", "Плутон"} :
+                new string[] {"Mercury", "Neptune", "Mars", "Venus", "Saturn", "Pluto"};
 
             for (int i=0; i<6; i++)
             {
@@ -184,7 +188,7 @@ public class Menu_functions : MonoBehaviour
                     all_records_names[max_index].RemoveAt(0);
 
 
-                    record_planets_string += planets[max_index];
+                    record_planets_string += planets_lang[max_index];
                 }
 
                 record_times_string += "\n";

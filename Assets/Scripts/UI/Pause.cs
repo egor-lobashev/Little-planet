@@ -51,7 +51,7 @@ public class Pause : MonoBehaviour
             {
                 string name = record.transform.GetChild(2).gameObject.GetComponent<UnityEngine.UI.Text>().text;
                     // not GetChild(1), because the caret appears
-                name = name == "" ? "Cosmonaut" : name;
+                name = name == "" ? (Translator.language == "russian" ? "Космонавт" : "Cosmonaut") : name;
 
                 records.Insert(i, Time_show.Time_sec());
                 record_names.Insert(i, name);

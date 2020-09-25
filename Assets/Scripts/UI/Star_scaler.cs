@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class Star_scaler : MonoBehaviour
 {
-    void Start()
+    void Update()
     {
         RectTransform rect_transform = GetComponent<RectTransform>();
         Rect original_size = GetComponent<Image>().sprite.rect;
