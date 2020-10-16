@@ -58,6 +58,7 @@ public class Health : MonoBehaviour
 
     public void Game_over()
     {
+	Cursor.visible = true;
         Time.timeScale = 0;
         main_screen.SetActive(false);
 	    AudioListener.pause = true;
