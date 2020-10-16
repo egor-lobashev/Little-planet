@@ -9,16 +9,31 @@ public class Controller : MonoBehaviour
     private Rigidbody2D rb;
     private Animator animator;
     public bool grounded;
+    public static bool golden = false;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        animator = transform.GetChild(0).GetComponent<Animator>();
+        if (!golden)
+            animator = transform.GetChild(0).gameObject.GetComponent<Animator>();
+        else
+            animator = transform.GetChild(1).gameObject.GetComponent<Animator>();
         Vector3 pos = transform.position;
         if (sun_is_close)
         {
             transform.position = new Vector3(pos.y, pos.x, pos.z);
             transform.eulerAngles = new Vector3(0, 0, -90);
+        }
+
+        if (golden)
+        {
+            transform.GetChild(0).gameObject.SetActive(false);
+            transform.GetChild(1).gameObject.SetActive(true);
+        }
+        else
+        {
+            transform.GetChild(0).gameObject.SetActive(true);
+            transform.GetChild(1).gameObject.SetActive(false);
         }
     }
 

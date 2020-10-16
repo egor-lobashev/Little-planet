@@ -732,6 +732,51 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1994983092855153355, guid: ce0f928f200542b8eb00398cc8096773,
+        type: 3}
+      propertyPath: bonuses.Array.data[2].y
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1994983092855153355, guid: ce0f928f200542b8eb00398cc8096773,
+        type: 3}
+      propertyPath: bonuses.Array.data[3].y
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1994983092855153355, guid: ce0f928f200542b8eb00398cc8096773,
+        type: 3}
+      propertyPath: bonuses.Array.data[4].y
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1994983092855153355, guid: ce0f928f200542b8eb00398cc8096773,
+        type: 3}
+      propertyPath: bonuses.Array.data[5].y
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1994983092855153355, guid: ce0f928f200542b8eb00398cc8096773,
+        type: 3}
+      propertyPath: bonuses.Array.data[6].y
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1994983092855153355, guid: ce0f928f200542b8eb00398cc8096773,
+        type: 3}
+      propertyPath: bonuses.Array.data[7].y
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1994983092855153355, guid: ce0f928f200542b8eb00398cc8096773,
+        type: 3}
+      propertyPath: bonuses.Array.data[8].y
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 1994983092855153355, guid: ce0f928f200542b8eb00398cc8096773,
+        type: 3}
+      propertyPath: bonuses.Array.data[0].y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1994983092855153355, guid: ce0f928f200542b8eb00398cc8096773,
+        type: 3}
+      propertyPath: bonuses.Array.data[1].y
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6958436832128835272, guid: ce0f928f200542b8eb00398cc8096773,
         type: 3}
       propertyPath: m_LocalPosition.x

@@ -8,14 +8,16 @@ public class Pause : MonoBehaviour
 
     void Start()
     {
+        Cursor.visible = false;
         Time.timeScale = 1;
-	AudioListener.pause = false;
+	    AudioListener.pause = false;
     }
 
     void Update()
     {
         if ((Time.timeScale > 0) && (Input.GetKeyDown(KeyCode.Escape)))
         {
+            Cursor.visible = true;
             Time.timeScale = 0;
             pause_screen.SetActive(true);
             AudioListener.pause = true;
@@ -24,6 +26,8 @@ public class Pause : MonoBehaviour
 
     public void Pause_finish()
     {
+        GetComponent<AudioSource>().Play();
+        Cursor.visible = false;
         Time.timeScale = 1;
         pause_screen.SetActive(false);
         AudioListener.pause = false;
@@ -31,6 +35,7 @@ public class Pause : MonoBehaviour
 
     public void Quit_to_menu()
     {
+        GetComponent<AudioSource>().Play();
         int stars = PlayerPrefs.GetInt("stars");
         PlayerPrefs.SetInt("stars", stars + Star_counter.stars);
         
@@ -69,6 +74,7 @@ public class Pause : MonoBehaviour
 
     public void Retry()
     {
+        GetComponent<AudioSource>().Play();
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }

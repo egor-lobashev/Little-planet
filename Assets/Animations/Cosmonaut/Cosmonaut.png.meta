@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 819584f625e48edbf81606cbe0b57f14
+guid: b502652dccd6d54fba6309720c6663b8
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -13,18 +13,66 @@ TextureImporter:
     second: right_2
   - first:
       213: -1832967027986972248
-    second: right_jump
+    second: right_3
   - first:
       213: -4510209550577970369
-    second: left
+    second: right_4
   - first:
       213: 36225294552767021
-    second: left_1
+    second: right_jump
   - first:
       213: -8778632317354167686
-    second: left_2
+    second: left
   - first:
       213: -3906815717348781308
+    second: left_1
+  - first:
+      213: 4750726300983451739
+    second: left_2
+  - first:
+      213: 5647216723265685520
+    second: left_3
+  - first:
+      213: -8316304960147065787
+    second: left_4
+  - first:
+      213: -2967791409105021488
+    second: left_jump
+  - first:
+      213: -8748448882926215512
+    second: right
+  - first:
+      213: -20541781552351231
+    second: right_1
+  - first:
+      213: 7734351353533996062
+    second: right_2
+  - first:
+      213: -6608887180356292841
+    second: right_3
+  - first:
+      213: -8372591594306006542
+    second: right_4
+  - first:
+      213: 1994705172382342902
+    second: right_jump
+  - first:
+      213: 7379131197905662020
+    second: left
+  - first:
+      213: 4436664581909389930
+    second: left_1
+  - first:
+      213: -6413975498325780727
+    second: left_2
+  - first:
+      213: 6872975812780889650
+    second: left_3
+  - first:
+      213: 1290881027018455077
+    second: left_4
+  - first:
+      213: 2820173603133207144
     second: left_jump
   externalObjects: {}
   serializedVersion: 11
@@ -138,8 +186,8 @@ TextureImporter:
       name: right
       rect:
         serializedVersion: 2
-        x: 12
-        y: 126
+        x: 11
+        y: 142
         width: 60
         height: 105
       alignment: 0
@@ -149,8 +197,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 72f6547863c1c2bd0800000000000000
-      internalID: -2653715059904778457
+      spriteID: 8ae158d9714479680800000000000000
+      internalID: -8748448882926215512
       vertices: []
       indices: 
       edges: []
@@ -159,8 +207,29 @@ TextureImporter:
       name: right_1
       rect:
         serializedVersion: 2
-        x: 95
-        y: 130
+        x: 92
+        y: 142
+        width: 48
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 108b487cb5507bff0800000000000000
+      internalID: -20541781552351231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: right_2
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 145
         width: 68
         height: 101
       alignment: 0
@@ -170,18 +239,39 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 65040eb18d2aec900800000000000000
-      internalID: 706681240608063574
+      spriteID: e1c9473e39fe55b60800000000000000
+      internalID: 7734351353533996062
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: right_2
+      name: right_3
       rect:
         serializedVersion: 2
-        x: 186
-        y: 127
+        x: 240
+        y: 136
+        width: 63
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71fea36ff148844a0800000000000000
+      internalID: -6608887180356292841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: right_4
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 139
         width: 66
         height: 104
       alignment: 0
@@ -191,8 +281,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3fe11e995aec0b4d0800000000000000
-      internalID: -3120767331121160461
+      spriteID: 2f118fb0e449ecb80800000000000000
+      internalID: -8372591594306006542
       vertices: []
       indices: 
       edges: []
@@ -201,8 +291,8 @@ TextureImporter:
       name: right_jump
       rect:
         serializedVersion: 2
-        x: 278
-        y: 130
+        x: 400
+        y: 141
         width: 75
         height: 102
       alignment: 0
@@ -212,8 +302,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8a145d3133eff86e0800000000000000
-      internalID: -1832967027986972248
+      spriteID: 6fedb7f29cd9eab10800000000000000
+      internalID: 1994705172382342902
       vertices: []
       indices: 
       edges: []
@@ -222,8 +312,8 @@ TextureImporter:
       name: left
       rect:
         serializedVersion: 2
-        x: 8
-        y: 10
+        x: 5
+        y: 12
         width: 60
         height: 105
       alignment: 0
@@ -233,8 +323,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f33d9335f448861c0800000000000000
-      internalID: -4510209550577970369
+      spriteID: 4407b2a6ab0f76660800000000000000
+      internalID: 7379131197905662020
       vertices: []
       indices: 
       edges: []
@@ -243,8 +333,29 @@ TextureImporter:
       name: left_1
       rect:
         serializedVersion: 2
-        x: 94
-        y: 11
+        x: 84
+        y: 14
+        width: 48
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6224484ee2329d30800000000000000
+      internalID: 4436664581909389930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: left_2
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 15
         width: 68
         height: 101
       alignment: 0
@@ -254,18 +365,39 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d2a93b5a6b2b08000800000000000000
-      internalID: 36225294552767021
+      spriteID: 9079b38544bfcf6a0800000000000000
+      internalID: -6413975498325780727
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: left_2
+      name: left_3
       rect:
         serializedVersion: 2
-        x: 183
-        y: 11
+        x: 236
+        y: 13
+        width: 63
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23618ae4617b16f50800000000000000
+      internalID: 6872975812780889650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: left_4
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 18
         width: 66
         height: 104
       alignment: 0
@@ -275,8 +407,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a7237562b680c2680800000000000000
-      internalID: -8778632317354167686
+      spriteID: 528f9b664712ae110800000000000000
+      internalID: 1290881027018455077
       vertices: []
       indices: 
       edges: []
@@ -285,8 +417,8 @@ TextureImporter:
       name: left_jump
       rect:
         serializedVersion: 2
-        x: 277
-        y: 13
+        x: 400
+        y: 16
         width: 75
         height: 102
       alignment: 0
@@ -296,8 +428,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4035384edc338c9c0800000000000000
-      internalID: -3906815717348781308
+      spriteID: 86230bb33f4432720800000000000000
+      internalID: 2820173603133207144
       vertices: []
       indices: 
       edges: []

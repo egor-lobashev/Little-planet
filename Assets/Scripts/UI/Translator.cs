@@ -99,6 +99,14 @@ i'm doing
 
 cancel
 
+How to play
+
+How to play
+
+press arrows <- and -> (or A and D) to move, press space to jump. Try to avoid meteors and other dangers.
+
+golden skin
+
 ".Split(new string[] {"\n\n"}, StringSplitOptions.RemoveEmptyEntries));
 
         languages.Add("russian",@"
@@ -165,6 +173,14 @@ English
 что делаю
 
 Отмена
+
+Как играть
+
+Как играть
+
+Нажимайте стрелки <- и -> (или A и D) чтобы ходить, пробел чтобы прыгать. Старайтесь избегать метеоритов и другий опасностей.
+
+золотой скин
 
 ".Split(new string[] {"\n\n"}, StringSplitOptions.RemoveEmptyEntries));
 

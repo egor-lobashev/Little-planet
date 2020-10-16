@@ -527,7 +527,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: ea74cfc9f46711279be300fb787971de, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 0f80b1825da148cd5a1d4d3e59127b08, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -634,5 +634,4 @@ MonoBehaviour:
   falling_range: 0.3
   explode_range: 0.4
   small_explode_range: 0.6
-  max_volume_damage: 10
   small_stones_delay: 0.5

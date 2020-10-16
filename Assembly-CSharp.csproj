@@ -56,6 +56,7 @@
      <Compile Include="Assets\Scripts\Pers\Health.cs" />
      <Compile Include="Assets\Scripts\Pers\Vestibular.cs" />
      <Compile Include="Assets\Scripts\UI\Button_scaler.cs" />
+     <Compile Include="Assets\Scripts\UI\Cosmonaut_color.cs" />
      <Compile Include="Assets\Scripts\UI\HP_show.cs" />
      <Compile Include="Assets\Scripts\UI\Menu_functions.cs" />
      <Compile Include="Assets\Scripts\UI\Pause.cs" />

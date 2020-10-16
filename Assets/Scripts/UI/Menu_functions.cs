@@ -7,11 +7,13 @@ public class Menu_functions : MonoBehaviour
     public List<GameObject> menu_history;
     public GameObject records_times, records_names, records_planets;
     public static int records_count = 5;
+    private bool first_records_opening = true;
     private static bool from_game = false;
     private int stars = 0;
 
     void Start()
     {
+        Cursor.visible = true;
         if (from_game)
         {
             from_game = false;
@@ -24,6 +26,9 @@ public class Menu_functions : MonoBehaviour
         }
         else
             PlayerPrefs.SetInt("stars", 0);
+        
+        if (stars < 2000)
+            Controller.golden = false;
     }
 
     void Update()
@@ -36,12 +41,25 @@ public class Menu_functions : MonoBehaviour
 
     public void Load_level(int number)
     {
+        GetComponent<AudioSource>().Play();
         from_game = true;
         SceneManager.LoadScene(number);
     }
 
     public void Open_menu(GameObject next)
     {
+        if (next.name == "Records")
+        {
+            if (first_records_opening)
+                first_records_opening = false;
+            else
+                GetComponent<AudioSource>().Play();
+        }
+        else
+        {
+            GetComponent<AudioSource>().Play();
+        }
+
         int depth = menu_history.Count;
 
         next.SetActive(true);
@@ -52,6 +70,7 @@ public class Menu_functions : MonoBehaviour
 
     public void Back()
     {
+        GetComponent<AudioSource>().Play();
         int depth = menu_history.Count;
         if (depth > 1)
         {
@@ -137,7 +156,9 @@ public class Menu_functions : MonoBehaviour
 
     public void Set_records(string planet)
     {
-        if (planet == "all")
+        GetComponent<AudioSource>().Play();
+
+        if ((planet == "all") || (planet == "all_1"))
         {
             string record_times_string = "", record_names_string = "", record_planets_string = "";
 
@@ -211,7 +232,14 @@ public class Menu_functions : MonoBehaviour
 
     public void Reset()
     {
+        GetComponent<AudioSource>().Play();
         PlayerPrefs.SetInt("stars", 0);
         SceneManager.LoadScene(0);
+    }
+
+    public void Switch_skin()
+    {
+        GetComponent<AudioSource>().Play();
+        Controller.golden = !Controller.golden;
     }
 }

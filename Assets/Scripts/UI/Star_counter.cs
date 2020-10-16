@@ -3,9 +3,14 @@
 public class Star_counter : MonoBehaviour
 {
     public Vector2[] bonuses;
-    public static int stars = 0;
+    public static int stars;
     private int stage = 0;
     private float timer = 0;
+
+    void Start()
+    {
+        stars = 0;
+    }
 
     void Update()
     {

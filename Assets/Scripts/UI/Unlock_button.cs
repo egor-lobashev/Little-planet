@@ -14,6 +14,10 @@ public class Unlock_button : MonoBehaviour
             locked_image.SetActive(false);
             star.SetActive(false);
             text.SetActive(false);
+            if (name == "Golden skin")
+            {
+                text.SetActive(false);
+            }
             unlocked_image.GetComponent<UnityEngine.UI.Image>().enabled = true;
         }
         else
