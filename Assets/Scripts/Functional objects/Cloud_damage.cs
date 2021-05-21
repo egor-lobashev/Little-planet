@@ -9,6 +9,14 @@ public class Cloud_damage : MonoBehaviour
     private float timer = 0;
     public AudioSource damage_sound;
 
+    void Start()
+    {
+        if (Controller.golden)
+        {
+            enabled = false;
+        }
+    }
+
     void OnTriggerStay2D(Collider2D collider)
     {
         GameObject other = collider.gameObject;

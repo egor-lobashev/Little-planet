@@ -28,12 +28,15 @@ SpriteAtlas:
       allowAlphaSplitting: 0
       enableRotation: 1
       enableTightPacking: 1
+    secondaryTextureSettings: {}
     variantMultiplier: 1
     packables:
     - {fileID: 6328552946641265529, guid: ff37fc627a34f5d39abd1c0313cd75be, type: 3}
     - {fileID: -2653715059904778457, guid: b502652dccd6d54fba6309720c6663b8, type: 3}
     totalSpriteSurfaceArea: 12600
     bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
   - {fileID: 6328552946641265529, guid: ff37fc627a34f5d39abd1c0313cd75be, type: 3}
@@ -41,5 +44,6 @@ SpriteAtlas:
   m_PackedSpriteNamesToIndex:
   - Cosmonaut_golden_0
   - right
+  m_RenderDataMap: {}
   m_Tag: cosmonaut avatars
   m_IsVariant: 0

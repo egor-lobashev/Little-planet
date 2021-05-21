@@ -28,11 +28,14 @@ SpriteAtlas:
       allowAlphaSplitting: 0
       enableRotation: 1
       enableTightPacking: 1
+    secondaryTextureSettings: {}
     variantMultiplier: 1
     packables:
     - {fileID: 2800000, guid: b214e9631fc2e2d958f4df0e564d71d5, type: 3}
     totalSpriteSurfaceArea: 606650
     bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
   - {fileID: 1889875667955066863, guid: b214e9631fc2e2d958f4df0e564d71d5, type: 3}
@@ -104,5 +107,6 @@ SpriteAtlas:
   - dark_meteors_14
   - dark_meteors_19
   - dark_meteors_18
+  m_RenderDataMap: {}
   m_Tag: dark_meteors
   m_IsVariant: 0

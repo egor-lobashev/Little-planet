@@ -17,11 +17,16 @@ public class Pause : MonoBehaviour
     {
         if ((Time.timeScale > 0) && (Input.GetKeyDown(KeyCode.Escape)))
         {
-            Cursor.visible = true;
+            Set_pause();
+        }
+    }
+
+    public void Set_pause()
+    {
+        Cursor.visible = true;
             Time.timeScale = 0;
             pause_screen.SetActive(true);
             AudioListener.pause = true;
-        }
     }
 
     public void Pause_finish()

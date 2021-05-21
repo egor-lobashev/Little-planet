@@ -1,0 +1,19 @@
+Using pre-set license
+Desktop is 1366 x 768 @ 60 Hz
+
+ COMMAND LINE ARGUMENTS:
+Unity
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker99
+-projectPath
+/media/moscow/Egor_documents/Unity_projects/Little_planet
+-logFile
+Logs/AssetImportWorker99.log
+-srvPort
+35597
+Successfully changed project path to: /media/moscow/Egor_documents/Unity_projects/Little_planet
+/media/moscow/Egor_documents/Unity_projects/Little_planet
+Using Asset Import Pipeline V2.

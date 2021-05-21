@@ -3,7 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class Controller : MonoBehaviour
 {
-    public float speed, jump_force;
+    public float speed, jump_force, min_angle, max_angle;
     public float ground_height = 0.5f, ground_radius = 0.05f, bumper_height = 0.35f, bumper_radius = 0.15f;
     public bool sun_is_close = false, ground_is_meteor = false;
     private Rigidbody2D rb;
@@ -39,7 +39,22 @@ public class Controller : MonoBehaviour
 
     void FixedUpdate()
     {
-        float move = Input.GetAxis("Horizontal");
+        float move;
+
+        #if UNITY_STANDALONE
+            move = Input.GetAxis("Horizontal");
+        #elif UNITY_ANDROID
+            float angle = - Input.acceleration.x / (Input.acceleration.y == 0 ? 0.001f : Input.acceleration.y);
+            if (Mathf.Abs(angle) <= min_angle)
+                move = 0;
+            else if (angle >= max_angle)
+                move = 1;
+            else if (angle <= -max_angle)
+                move = -1;
+            else
+                move = Mathf.Sin(Mathf.PI/2 * angle / max_angle);
+        #endif
+
         Vector2 pos = transform.position;
 
         float r = pos.magnitude;
@@ -66,10 +81,17 @@ public class Controller : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && grounded)
-        {
-            Jump();
-        }
+        #if UNITY_STANDALONE
+            if (Input.GetKeyDown(KeyCode.Space) && grounded)
+            {
+                Jump();
+            }
+        #elif UNITY_ANDROID
+            if ((Input.touchCount > 0) && (Input.GetTouch(0).phase == TouchPhase.Began))
+            {
+                Jump();
+            }
+        #endif
 
         animator.SetBool("going_right", Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow));
         animator.SetBool("going_left", Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow));
